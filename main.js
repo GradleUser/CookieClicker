@@ -1369,7 +1369,7 @@ Game.Launch=function()
 			console.log('Loaded the mod '+url+', '+id+'.');
 		}
 		
-		//replacing an existing canvas picture with a new one at runtime : Game.Loader.Replace('perfectCookie.png','imperfectCookie.png');
+		//replacing an existing canvas picture with a new one at runtime : Game.Loader.Replace('perfectDabloon.png','imperfectCookie.png');
 		//upgrades and achievements can use other pictures than icons.png; declare their icon with [posX,posY,'http://example.com/myIcons.png']
 		//check out the "UNLOCKING STUFF" section to see how unlocking achievs and upgrades is done (queue yours in Game.customChecks)
 		//if you're making a mod, don't forget to add a Game.Win('Third-party') somewhere in there!
@@ -12380,7 +12380,7 @@ Game.Launch=function()
 									var spin=Game.T*(0.005+i*0.001)+i+(ii/num)*Math.PI*2;
 									x+=Math.sin(spin)*space;
 									y+=Math.cos(spin)*space;
-									ctx.drawImage(Pic('perfectCookie.png'),x-s/2,y-s/2,s,s);
+									ctx.drawImage(Pic('perfectDabloon.png'),x-s/2,y-s/2,s,s);
 								}
 								space+=s/2;
 							}
@@ -12400,7 +12400,7 @@ Game.Launch=function()
 								ctx.drawImage(Pic('nest.png'),-nestW/2,-nestH/2+130,nestW,nestH);
 							}
 							//ctx.rotate(((Game.startDate%360)/360)*Math.PI*2);
-							ctx.drawImage(Pic('perfectCookie.png'),-s/2,-s/2,s,s);
+							ctx.drawImage(Pic('perfectDabloon.png'),-s/2,-s/2,s,s);
 							
 							if (goodBuff && Game.prefs.particles)//sparkle
 							{
@@ -12442,7 +12442,7 @@ Game.Launch=function()
 						var s=256*Game.BigCookieSize;
 						var x=Game.cookieOriginX-s/2;
 						var y=Game.cookieOriginY-s/2;
-						ctx.drawImage(Pic('perfectCookie.png'),x,y,s,s);
+						ctx.drawImage(Pic('perfectDabloon.png'),x,y,s,s);
 					}
 					
 					//cursors
