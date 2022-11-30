@@ -4925,7 +4925,7 @@ Game.Launch=function()
 		Game.particles=[];
 		for (var i=0;i<50;i++)
 		{
-			Game.particles[i]={x:0,y:0,xd:0,yd:0,w:64,h:64,z:0,size:1,dur:2,life:-1,r:0,pic:'smallCookies.png',picId:0};
+			Game.particles[i]={x:0,y:0,xd:0,yd:0,w:64,h:64,z:0,size:1,dur:2,life:-1,r:0,pic:'smallDabloons.png',picId:0};
 		}
 		
 		Game.particlesUpdate=function()
@@ -4997,7 +4997,7 @@ Game.Launch=function()
 						pic='icons.png';
 					}
 				}
-				me.pic=pic||'smallCookies.png';
+				me.pic=pic||'smallDabloons.png';
 				me.text=text||0;
 				return me;
 			}
@@ -12670,7 +12670,7 @@ Game.Launch=function()
 							ctx.save();
 							ctx.translate(me.x,me.y);
 							ctx.rotate(me.r);
-							if (Game.toysType==1) ctx.drawImage(Pic('smallCookies.png'),(me.id%8)*64,0,64,64,-me.s/2,-me.s/2,me.s,me.s);
+							if (Game.toysType==1) ctx.drawImage(Pic('smallDabloons.png'),(me.id%8)*64,0,64,64,-me.s/2,-me.s/2,me.s,me.s);
 							else ctx.drawImage(Pic('icons.png'),me.icon[0]*48,me.icon[1]*48,48,48,-me.s/2,-me.s/2,me.s,me.s);
 							ctx.restore();
 						}
@@ -12750,7 +12750,7 @@ Game.Launch=function()
 							ctx.save();
 							ctx.translate(me.x,me.y);
 							ctx.rotate(me.r);
-							if (Game.toysType==1) ctx.drawImage(Pic('smallCookies.png'),(me.id%8)*64,0,64,64,-me.s/2,-me.s/2,me.s,me.s);
+							if (Game.toysType==1) ctx.drawImage(Pic('smallDabloons.png'),(me.id%8)*64,0,64,64,-me.s/2,-me.s/2,me.s,me.s);
 							else ctx.drawImage(Pic('icons.png'),me.icon[0]*48,me.icon[1]*48,48,48,-me.s/2,-me.s/2,me.s,me.s);
 							ctx.restore();
 						}
