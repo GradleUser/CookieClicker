@@ -883,8 +883,7 @@ Game.Launch=function()
 	'<div class="listing">&bull; new upgrade and achievement tier</div>'+
 	'<div class="listing">&bull; popups and prompts are much nicer</div>'+
 	'<div class="listing">&bull; tooltips on buildings are more informative</div>'+
-	'<div class="listing">&bull; implemented a simplified version of the <a href="https://github.com/Icehawk78/Frozen
-	target="_blank">Frozen Cookies</a> add-on\'s short number formatting</div>'+
+	'<div class="listing">&bull; implemented a simplified version of the <a href="https://github.com/Icehawk78/Frozen" target="_blank">Frozen Cookies</a> add-on\'s short number formatting</div>'+
 	'<div class="listing">&bull; you can now buy 10 and sell all of a building at a time</div>'+
 	'<div class="listing">&bull; tons of optimizations and subtler changes</div>'+
 	'<div class="listing">&bull; you can now <a href="http://orteil.dashnet.org/cookies2cash/" target="_blank">convert your cookies to cash</a>!</div>'+
