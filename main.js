@@ -662,7 +662,7 @@ Game.Launch=function()
 	'<div class="listing">&bull; added a new building</div>'+
 	'<div class="listing">&bull; launched our <a href="https://www.patreon.com/dashnet" class="orangeLink" target="_blank">Patreon</a> <span style="font-size:80%;">(the link is orange so you\'ll notice it!)</span></div>'+
 	'<div class="listing">&bull; added a bunch of new heavenly upgrades, one of which ties into our Patreon but benefits everyone (this is still experimental!)</div>'+
-	'<div class="listing">&bull; when hovering over grandmas, you can now see their names and ages</div>'+
+	'<div class="listing">&bull; when hovering over dabloon cats, you can now see their names and ages</div>'+
 	'<div class="listing">&bull; "make X cookies just from Y" requirements are now higher</div>'+
 	'<div class="listing">&bull; tweaked the prices of some heavenly upgrades to better fit the current cookie economy (it turns out billions of heavenly chips is now very achievable)</div>'+
 	'<div class="listing">&bull; building tooltips now display what % of CpS they contribute through synergy upgrades</div>'+
@@ -929,7 +929,7 @@ Game.Launch=function()
 	
 	'</div><div class="subsection update small">'+
 	'<div class="title">29/10/2013 - spooky update</div>'+
-	'<div class="listing">&bull; the Grandmapocalypse now spawns wrinklers, hideous elderly creatures that damage your CpS when they reach your big cookie. Thankfully, you can click on them to make them explode (you\'ll even gain back the cookies they\'ve swallowed - with interest!).</div>'+
+	'<div class="listing">&bull; the Catpocalypse now spawns wrinklers, hideous elderly creatures that damage your CpS when they reach your big cookie. Thankfully, you can click on them to make them explode (you\'ll even gain back the cookies they\'ve swallowed - with interest!).</div>'+
 	'<div class="listing">&bull; wrath cookie now 27% spookier</div>'+
 	'<div class="listing">&bull; some other stuff</div>'+
 	'<div class="listing">&bull; you should totally go check out <a href="http://candybox2.net/" target="_blank">Candy Box 2</a>, the sequel to the game that inspired Cookie Clicker</div>'+
@@ -1009,7 +1009,7 @@ Game.Launch=function()
 	'</div><div class="subsection update small">'+
 	'<div class="title">02/09/2013 - a better way out</div>'+
 	'<div class="listing">&bull; Elder Covenant is even cheaper, and revoking it is cheaper still (also added a new achievement for getting it)</div>'+
-	'<div class="listing">&bull; each grandma upgrade now requires 15 of the matching building</div>'+
+	'<div class="listing">&bull; each cat upgrade now requires 15 of the matching building</div>'+
 	'<div class="listing">&bull; the dreaded bottom cursor has been fixed with a new cursor display style</div>'+
 	'<div class="listing">&bull; added an option for faster, cheaper graphics</div>'+
 	'<div class="listing">&bull; base64 encoding has been redone; this might make saving possible again on some older browsers</div>'+
@@ -1026,14 +1026,14 @@ Game.Launch=function()
 	
 	'</div><div class="subsection update small">'+
 	'<div class="title">31/08/2013 - hotfixes</div>'+
-	'<div class="listing">&bull; added a way to permanently stop the grandmapocalypse</div>'+
+	'<div class="listing">&bull; added a way to permanently stop the catpocalypse</div>'+
 	'<div class="listing">&bull; Elder Pledge price is now capped</div>'+
-	'<div class="listing">&bull; One Mind and other grandma research upgrades are now a little more powerful, if not 100% accurate</div>'+
-	'<div class="listing">&bull; "golden" cookie now appears again during grandmapocalypse; Elder Pledge-related achievements are now unlockable</div>'+
+	'<div class="listing">&bull; One Mind and other cat research upgrades are now a little more powerful, if not 100% accurate</div>'+
+	'<div class="listing">&bull; "golden" cookie now appears again during catpocalypse; Elder Pledge-related achievements are now unlockable</div>'+
 	
 	'</div><div class="subsection update">'+
-	'<div class="title">31/08/2013 - too many grandmas</div>'+
-	'<div class="listing">&bull; the grandmapocalypse is back, along with more grandma types</div>'+
+	'<div class="title">31/08/2013 - too many cats</div>'+
+	'<div class="listing">&bull; the catpocalypse is back, along with more cat types</div>'+
 	'<div class="listing">&bull; added some upgrades that boost your clicking power and make it scale with your cps</div>'+
 	'<div class="listing">&bull; clicking achievements made harder; Neverclick is now a shadow achievement; Uncanny clicker should now truly be a world record</div>'+
 	
@@ -5757,7 +5757,8 @@ Game.Launch=function()
 					(Game.Objects['Portal'].amount>0?'<div class="listing"><b>TV show seasons produced :</b> '+Beautify(Math.floor((timeInSeconds/60/60)*(Game.Objects['Portal'].amount*0.13)+1))+'</div>':'')
 				:'')+
 				(researchStr!=''?'<div class="listing"><b>Research :</b> '+researchStr+' remaining</div>':'')+
-				(wrathStr!=''?'<div class="listing"><b>Grandmatriarchs status :</b> '+wrathStr+'</div>':'')+
+				(wrathStr!=''?'<div class="listing"><b>
+				 triarchs status :</b> '+wrathStr+'</div>':'')+
 				(pledgeStr!=''?'<div class="listing"><b>Pledge :</b> '+pledgeStr+' remaining</div>':'')+
 				(Game.wrinklersPopped>0?'<div class="listing"><b>Wrinklers popped :</b> '+Beautify(Game.wrinklersPopped)+'</div>':'')+
 				((Game.canLumps() && Game.lumpsTotal>-1)?'<div class="listing"><b>Sugar lumps harvested :</b> <div class="price lump plain">'+Beautify(Game.lumpsTotal)+'</div></div>':'')+
@@ -7405,7 +7406,7 @@ Game.Launch=function()
 		});
 		
 		Game.SpecialGrandmaUnlock=15;
-		new Game.Object('Grandma','grandma|grandmas|baked|Grandmas are [X] year older|Grandmas are [X] years older','A nice grandma to bake more cookies.',1,1,{pic:function(i){
+		new Game.Object('Cat','cat|cats|baked|Cats are [X] year older|Cats are [X] years older','A nice cat to give more dabloons.',1,1,{pic:function(i){
 			var list=['grandma'];
 			if (Game.Has('Farmer grandmas')) list.push('farmerGrandma');
 			if (Game.Has('Worker grandmas')) list.push('workerGrandma');
@@ -7470,7 +7471,7 @@ Game.Launch=function()
 		Game.last.iconFunc=function(type){
 			var grandmaIcons=[[0,1],[0,2],[1,2],[2,2]];
 			if (type=='off') return [0,1];
-			return grandmaIcons[Game.elderWrath];
+			return 
 		};
 		
 		
