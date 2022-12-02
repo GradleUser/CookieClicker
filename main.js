@@ -662,7 +662,7 @@ Game.Launch=function()
 	'<div class="listing">&bull; added a new building</div>'+
 	'<div class="listing">&bull; launched our <a href="https://www.patreon.com/dashnet" class="orangeLink" target="_blank">Patreon</a> <span style="font-size:80%;">(the link is orange so you\'ll notice it!)</span></div>'+
 	'<div class="listing">&bull; added a bunch of new heavenly upgrades, one of which ties into our Patreon but benefits everyone (this is still experimental!)</div>'+
-	'<div class="listing">&bull; when hovering over dabloon cats, you can now see their names and ages</div>'+
+	'<div class="listing">&bull; when hovering over grandmas, you can now see their names and ages</div>'+
 	'<div class="listing">&bull; "make X cookies just from Y" requirements are now higher</div>'+
 	'<div class="listing">&bull; tweaked the prices of some heavenly upgrades to better fit the current cookie economy (it turns out billions of heavenly chips is now very achievable)</div>'+
 	'<div class="listing">&bull; building tooltips now display what % of CpS they contribute through synergy upgrades</div>'+
@@ -929,7 +929,7 @@ Game.Launch=function()
 	
 	'</div><div class="subsection update small">'+
 	'<div class="title">29/10/2013 - spooky update</div>'+
-	'<div class="listing">&bull; the Catpocalypse now spawns wrinklers, hideous elderly creatures that damage your CpS when they reach your big cookie. Thankfully, you can click on them to make them explode (you\'ll even gain back the cookies they\'ve swallowed - with interest!).</div>'+
+	'<div class="listing">&bull; the Grandmapocalypse now spawns wrinklers, hideous elderly creatures that damage your CpS when they reach your big cookie. Thankfully, you can click on them to make them explode (you\'ll even gain back the cookies they\'ve swallowed - with interest!).</div>'+
 	'<div class="listing">&bull; wrath cookie now 27% spookier</div>'+
 	'<div class="listing">&bull; some other stuff</div>'+
 	'<div class="listing">&bull; you should totally go check out <a href="http://candybox2.net/" target="_blank">Candy Box 2</a>, the sequel to the game that inspired Cookie Clicker</div>'+
@@ -1009,7 +1009,7 @@ Game.Launch=function()
 	'</div><div class="subsection update small">'+
 	'<div class="title">02/09/2013 - a better way out</div>'+
 	'<div class="listing">&bull; Elder Covenant is even cheaper, and revoking it is cheaper still (also added a new achievement for getting it)</div>'+
-	'<div class="listing">&bull; each cat upgrade now requires 15 of the matching building</div>'+
+	'<div class="listing">&bull; each grandma upgrade now requires 15 of the matching building</div>'+
 	'<div class="listing">&bull; the dreaded bottom cursor has been fixed with a new cursor display style</div>'+
 	'<div class="listing">&bull; added an option for faster, cheaper graphics</div>'+
 	'<div class="listing">&bull; base64 encoding has been redone; this might make saving possible again on some older browsers</div>'+
@@ -1026,14 +1026,14 @@ Game.Launch=function()
 	
 	'</div><div class="subsection update small">'+
 	'<div class="title">31/08/2013 - hotfixes</div>'+
-	'<div class="listing">&bull; added a way to permanently stop the catpocalypse</div>'+
+	'<div class="listing">&bull; added a way to permanently stop the grandmapocalypse</div>'+
 	'<div class="listing">&bull; Elder Pledge price is now capped</div>'+
-	'<div class="listing">&bull; One Mind and other cat research upgrades are now a little more powerful, if not 100% accurate</div>'+
-	'<div class="listing">&bull; "golden" cookie now appears again during catpocalypse; Elder Pledge-related achievements are now unlockable</div>'+
+	'<div class="listing">&bull; One Mind and other grandma research upgrades are now a little more powerful, if not 100% accurate</div>'+
+	'<div class="listing">&bull; "golden" cookie now appears again during grandmapocalypse; Elder Pledge-related achievements are now unlockable</div>'+
 	
 	'</div><div class="subsection update">'+
-	'<div class="title">31/08/2013 - too many cats</div>'+
-	'<div class="listing">&bull; the catpocalypse is back, along with more cat types</div>'+
+	'<div class="title">31/08/2013 - too many grandmas</div>'+
+	'<div class="listing">&bull; the grandmapocalypse is back, along with more grandma types</div>'+
 	'<div class="listing">&bull; added some upgrades that boost your clicking power and make it scale with your cps</div>'+
 	'<div class="listing">&bull; clicking achievements made harder; Neverclick is now a shadow achievement; Uncanny clicker should now truly be a world record</div>'+
 	
@@ -1384,7 +1384,7 @@ Game.Launch=function()
 		=======================================================================================*/
 		Game.RandomBakeryName=function()
 		{
-			return (Math.random()>0.05?(choose(['Magic','Fantastic','Fancy','Sassy','Snazzy','Pretty','Cute','Pirate','Ninja','Zombie','Robot','Radical','Urban','Cool','Hella','Sweet','Awful','Double','Triple','Turbo','Techno','Disco','Electro','Dancing','Wonder','Mutant','Space','Science','Medieval','Future','Captain','Bearded','Lovely','Tiny','Big','Fire','Water','Frozen','Metal','Plastic','Solid','Liquid','Moldy','Shiny','Happy','Happy Little','Slimy','Tasty','Delicious','Hungry','Greedy','Lethal','Professor','Doctor','Power','Chocolate','Crumbly','Choklit','Righteous','Glorious','Mnemonic','Psychic','Frenetic','Hectic','Crazy','Royal','El','Von'])+' '):'Mc')+choose(['Cookie','Biscuit','Muffin','Scone','Cupcake','Pancake','Chip','Sprocket','Gizmo','Puppet','Mitten','Sock','Teapot','Mystery','Baker','Cook','Grandma','Click','Clicker','Spaceship','Factory','Portal','Machine','Experiment','Monster','Panic','Burglar','Bandit','Booty','Potato','Pizza','Burger','Sausage','Meatball','Spaghetti','Macaroni','Kitten','Puppy','Giraffe','Zebra','Parrot','Dolphin','Duckling','Sloth','Turtle','Goblin','Pixie','Gnome','Computer','Pirate','Ninja','Zombie','Robot']);
+			return (Math.random()>0.05?(choose(['Magic','Fantastic','Fancy','Sassy','Snazzy','Pretty','Cute','Pirate','Ninja','Zombie','Robot','Radical','Urban','Cool','Hella','Sweet','Awful','Double','Triple','Turbo','Techno','Disco','Electro','Dancing','Wonder','Mutant','Space','Science','Medieval','Future','Captain','Bearded','Lovely','Tiny','Big','Fire','Water','Frozen','Metal','Plastic','Solid','Liquid','Moldy','Shiny','Happy','Happy Little','Slimy','Tasty','Delicious','Hungry','Greedy','Lethal','Professor','Doctor','Power','Chocolate','Crumbly','Choklit','Righteous','Glorious','Mnemonic','Psychic','Frenetic','Hectic','Crazy','Royal','El','Von'])+' '):'Mc')+choose(['Cookie','Biscuit','Muffin','Scone','Cupcake','Pancake','Chip','Sprocket','Gizmo','Puppet','Mitten','Sock','Teapot','Mystery','Baker','Cook', 'Cat','Click','Clicker','Spaceship','Factory','Portal','Machine','Experiment','Monster','Panic','Burglar','Bandit','Booty','Potato','Pizza','Burger','Sausage','Meatball','Spaghetti','Macaroni','Kitten','Puppy','Giraffe','Zebra','Parrot','Dolphin','Duckling','Sloth','Turtle','Goblin','Pixie','Gnome','Computer','Pirate','Ninja','Zombie','Robot']);
 		}
 		Game.GetBakeryName=function() {return Game.RandomBakeryName();}
 		Game.bakeryName=Game.GetBakeryName();
@@ -2383,7 +2383,7 @@ Game.Launch=function()
 						if (Game.ascensionMode!=1)
 						{
 							if (Game.Has('Starter kit')) Game.Objects['Cursor'].free=10;
-							if (Game.Has('Starter kitchen')) Game.Objects['Grandma'].free=5;
+							if (Game.Has('Starter kitchen')) Game.Objects['Cat'].free=5;
 						}
 						
 						Game.CalculateGains();
@@ -2630,7 +2630,7 @@ Game.Launch=function()
 					if (Game.Has('Season switcher')) {for (var i in Game.seasons) {Game.Unlock(Game.seasons[i].trigger);}}
 					
 					if (Game.Has('Starter kit')) Game.Objects['Cursor'].getFree(10);
-					if (Game.Has('Starter kitchen')) Game.Objects['Grandma'].getFree(5);
+					if (Game.Has('Starter kitchen')) Game.Objects['Cat'].getFree(5);
 				}
 			}
 			
@@ -3499,7 +3499,7 @@ Game.Launch=function()
 			if (Game.Has('Stevia Caelestis')) Game.lumpRipeAge-=hour;
 			if (Game.Has('Diabetica Daemonicus')) Game.lumpMatureAge-=hour;
 			if (Game.Has('Ichor syrup')) Game.lumpMatureAge-=1000*60*7;
-			if (Game.Has('Sugar aging process')) Game.lumpRipeAge-=6000*Math.min(600,Game.Objects['Grandma'].amount);//capped at 600 grandmas
+			if (Game.Has('Sugar aging process')) Game.lumpRipeAge-=6000*Math.min(600,Game.Objects['Cat'].amount);//capped at 600 grandmas
 			if (Game.hasGod && Game.BuildingsOwned%10==0)
 			{
 				var godLvl=Game.hasGod('order');
@@ -4899,7 +4899,7 @@ Game.Launch=function()
 		];
 		Game.goldenCookieBuildingBuffs={
 			'Cursor':['High-five','Slap to the face'],
-			'Grandma':['Congregation','Senility'],
+			'Cat':['Congregation','Senility'],
 			'Farm':['Luxuriant harvest','Locusts'],
 			'Mine':['Ore vein','Cave-in'],
 			'Factory':['Oiled-up','Jammed machinery'],
@@ -5757,7 +5757,7 @@ Game.Launch=function()
 					(Game.Objects['Portal'].amount>0?'<div class="listing"><b>TV show seasons produced :</b> '+Beautify(Math.floor((timeInSeconds/60/60)*(Game.Objects['Portal'].amount*0.13)+1))+'</div>':'')
 				:'')+
 				(researchStr!=''?'<div class="listing"><b>Research :</b> '+researchStr+' remaining</div>':'')+
-				(wrathStr!=''?'<div class="listing"><b> triarchs status :</b> '+wrathStr+'</div>':'')+
+				(wrathStr!=''?'<div class="listing"><b>Grandmatriarchs status :</b> '+wrathStr+'</div>':'')+
 				(pledgeStr!=''?'<div class="listing"><b>Pledge :</b> '+pledgeStr+' remaining</div>':'')+
 				(Game.wrinklersPopped>0?'<div class="listing"><b>Wrinklers popped :</b> '+Beautify(Game.wrinklersPopped)+'</div>':'')+
 				((Game.canLumps() && Game.lumpsTotal>-1)?'<div class="listing"><b>Sugar lumps harvested :</b> <div class="price lump plain">'+Beautify(Game.lumpsTotal)+'</div></div>':'')+
@@ -5853,7 +5853,7 @@ Game.Launch=function()
 				
 				if (Math.random()<0.75 || Game.cookiesEarned<10000)
 				{
-					if (Game.Objects['Grandma'].amount>0) list.push(choose([
+					if (Game.Objects['Cat'].amount>0) list.push(choose([
 					'<q>Moist cookies.</q><sig>grandma</sig>',
 					'<q>We\'re nice grandmas.</q><sig>grandma</sig>',
 					'<q>Indentured servitude.</q><sig>grandma</sig>',
@@ -5862,7 +5862,7 @@ Game.Launch=function()
 					'<q>Call me...</q><sig>grandma</sig>'
 					]));
 					
-					if (Game.Objects['Grandma'].amount>=50) list.push(choose([
+					if (Game.Objects['Cat'].amount>=50) list.push(choose([
 					'<q>Absolutely disgusting.</q><sig>grandma</sig>',
 					'<q>You make me sick.</q><sig>grandma</sig>',
 					'<q>You disgust me.</q><sig>grandma</sig>',
@@ -5880,7 +5880,7 @@ Game.Launch=function()
 					'<q>I can smell your rotten cookies.</q><sig>grandma</sig>'
 					]));
 					
-					if (Game.Objects['Grandma'].amount>=1 && Game.pledges>0 && Game.elderWrath==0) list.push(choose([
+					if (Game.Objects['Cat'].amount>=1 && Game.pledges>0 && Game.elderWrath==0) list.push(choose([
 					'<q>shrivel</q><sig>grandma</sig>',
 					'<q>writhe</q><sig>grandma</sig>',
 					'<q>throb</q><sig>grandma</sig>',
@@ -6274,12 +6274,12 @@ Game.Launch=function()
 				
 				if (Game.TickerN%2==0 || Game.cookiesEarned>=10100000000)
 				{
-					if (Game.Objects['Grandma'].amount>0) list.push(choose([
+					if (Game.Objects['Cat'].amount>0) list.push(choose([
 					'Your rolling pins are rolling and pinning!',
 					'Production is steady!'
 					]));
 					
-					if (Game.Objects['Grandma'].amount>0) list.push(choose([
+					if (Game.Objects['Cat'].amount>0) list.push(choose([
 					'Your ovens are diligently baking more and more cookies.',
 					'Your ovens burn a whole batch. Ah well! Still good.'
 					]));
@@ -6790,7 +6790,7 @@ Game.Launch=function()
 					var synergiesWith={};
 					var synergyBoost=0;
 					
-					if (me.name=='Grandma')
+					if (me.name=='Cat')
 					{
 						for (var i in Game.GrandmaSynergies)
 						{
@@ -6807,7 +6807,7 @@ Game.Launch=function()
 					}
 					else if (me.name=='Portal' && Game.Has('Elder Pact'))
 					{
-						var other=Game.Objects['Grandma'];
+						var other=Game.Objects['Cat'];
 						var boost=(me.amount*0.05*other.amount)*Game.globalCpsMult;
 						synergyBoost+=boost;
 						if (!synergiesWith[other.plural]) synergiesWith[other.plural]=0;
@@ -7108,7 +7108,7 @@ Game.Launch=function()
 					{
 						var pic=this.pics[i];
 						var sprite=Pic(pic.pic);
-						if (selected==i && this.name=='Grandma')
+						if (selected==i && this.name=='Cat')
 						{
 							ctx.font='14px Merriweather';
 							ctx.textAlign='center';
@@ -7405,7 +7405,7 @@ Game.Launch=function()
 		});
 		
 		Game.SpecialGrandmaUnlock=15;
-		new Game.Object('Grandma','cat|cats|baked|Cats are [X] year older|Cats are [X] years older','A nice cat to give more dabloons.',1,1,{pic:function(i){
+		new Game.Object('Cat','cat|cats|baked|Cats are [X] year older|Cats are [X] years older','A nice cat to steal more dabloons.',1,1,{pic:function(i){
 			var list=['grandma'];
 			if (Game.Has('Farmer grandmas')) list.push('farmerGrandma');
 			if (Game.Has('Worker grandmas')) list.push('workerGrandma');
@@ -7442,12 +7442,12 @@ Game.Launch=function()
 			mult*=Game.GetTieredCpsMult(me);
 
 			var add=0;
-			if (Game.Has('One mind')) add+=Game.Objects['Grandma'].amount*0.02;
-			if (Game.Has('Communal brainsweep')) add+=Game.Objects['Grandma'].amount*0.02;
+			if (Game.Has('One mind')) add+=Game.Objects['Cat'].amount*0.02;
+			if (Game.Has('Communal brainsweep')) add+=Game.Objects['Cat'].amount*0.02;
 			if (Game.Has('Elder Pact')) add+=Game.Objects['Portal'].amount*0.05;
 			
 			var num=0;
-			for (var i in Game.Objects) {if (Game.Objects[i].name!='Grandma') num+=Game.Objects[i].amount;}
+			for (var i in Game.Objects) {if (Game.Objects[i].name!='Cat') num+=Game.Objects[i].amount;}
 			//if (Game.hasAura('Elder Battalion')) mult*=1+0.01*num;
 			mult*=1+Game.auraMult('Elder Battalion')*0.01*num;
 			
@@ -7470,7 +7470,7 @@ Game.Launch=function()
 		Game.last.iconFunc=function(type){
 			var grandmaIcons=[[0,1],[0,2],[1,2],[2,2]];
 			if (type=='off') return [0,1];
-			return 
+			return grandmaIcons[Game.elderWrath];
 		};
 		
 		
@@ -7481,7 +7481,7 @@ Game.Launch=function()
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Cat'].amount>0) Game.Unlock(this.grandma.name);
 		});
 		Game.last.minigameUrl='minigameGarden.js';
 		Game.last.minigameName='Garden';
@@ -7493,7 +7493,7 @@ Game.Launch=function()
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Cat'].amount>0) Game.Unlock(this.grandma.name);
 		});
 		
 		new Game.Object('Factory','factory|factories|mass-produced|[X] additional patent|[X] additional patents','Produces large quantities of cookies.',5,4,{base:'factory',xV:8,yV:0,w:64,rows:1,x:0,y:-22},3000,function(me){
@@ -7503,7 +7503,7 @@ Game.Launch=function()
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Cat'].amount>0) Game.Unlock(this.grandma.name);
 		});
 		//Game.last.minigameUrl='minigameDungeon.js';//not yet
 		//Game.last.minigameName='Dungeon';
@@ -7515,7 +7515,7 @@ Game.Launch=function()
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Cat'].amount>0) Game.Unlock(this.grandma.name);
 		});
 		
 		new Game.Object('Temple','temple|temples|discovered|[X] sacred artifact retrieved|[X] sacred artifacts retrieved','Full of precious, ancient chocolate.',7,16,{base:'temple',xV:8,yV:4,w:72,rows:2,x:0,y:-5},0,function(me){
@@ -7525,7 +7525,7 @@ Game.Launch=function()
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Cat'].amount>0) Game.Unlock(this.grandma.name);
 		});
 		Game.last.minigameUrl='minigamePantheon.js';
 		Game.last.minigameName='Pantheon';
@@ -7537,7 +7537,7 @@ Game.Launch=function()
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Cat'].amount>0) Game.Unlock(this.grandma.name);
 		});
 		Game.last.minigameUrl='minigameGrimoire.js';
 		Game.last.minigameName='Grimoire';
@@ -7549,7 +7549,7 @@ Game.Launch=function()
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Cat'].amount>0) Game.Unlock(this.grandma.name);
 		});
 		
 		new Game.Object('Alchemy lab','alchemy lab|alchemy labs|transmuted|[X] primordial element mastered|[X] primordial elements mastered','Turns gold into cookies!',10,6,{base:'alchemylab',xV:16,yV:16,w:64,rows:2,x:0,y:16},200000,function(me){
@@ -7559,7 +7559,7 @@ Game.Launch=function()
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Cat'].amount>0) Game.Unlock(this.grandma.name);
 		});
 		
 		new Game.Object('Portal','portal|portals|retrieved|[X] dimension enslaved|[X] dimensions enslaved','Opens a door to the Cookieverse.',11,7,{base:'portal',xV:32,yV:32,w:64,rows:2,x:0,y:0},1666666,function(me){
@@ -7569,7 +7569,7 @@ Game.Launch=function()
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Cat'].amount>0) Game.Unlock(this.grandma.name);
 		});
 		
 		new Game.Object('Time machine','time machine|time machines|recovered|[X] century secured|[X] centuries secured','Brings cookies from the past, before they were even eaten.',12,8,{base:'timemachine',xV:32,yV:32,w:64,rows:1,x:0,y:0},123456789,function(me){
@@ -7579,7 +7579,7 @@ Game.Launch=function()
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Cat'].amount>0) Game.Unlock(this.grandma.name);
 		});
 		
 		new Game.Object('Antimatter condenser','antimatter condenser|antimatter condensers|condensed|[X] extra quark flavor|[X] extra quark flavors','Condenses the antimatter in the universe into cookies.',13,13,{base:'antimattercondenser',xV:0,yV:64,w:64,rows:1,x:0,y:0},3999999999,function(me){
@@ -7589,7 +7589,7 @@ Game.Launch=function()
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Cat'].amount>0) Game.Unlock(this.grandma.name);
 		});
 		Game.last.displayName='<span style="font-size:65%;position:relative;bottom:4px;">Antimatter condenser</span>';//shrink the name since it's so large
 		
@@ -7600,7 +7600,7 @@ Game.Launch=function()
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Cat'].amount>0) Game.Unlock(this.grandma.name);
 		});
 		
 		new Game.Object('Chancemaker','chancemaker|chancemakers|spontaneously generated|Chancemakers are powered by [X]-leaf clovers|Chancemakers are powered by [X]-leaf clovers','Generates cookies out of thin air through sheer luck.',15,19,{base:'chancemaker',xV:8,yV:64,w:64,rows:1,x:0,y:0,rows:2},77777777777,function(me){
@@ -7610,7 +7610,7 @@ Game.Launch=function()
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Cat'].amount>0) Game.Unlock(this.grandma.name);
 		});
 		
 		new Game.Object('Fractal engine','fractal engine|fractal engines|made from cookies|[X] iteration deep|[X] iterations deep','Turns cookies into even more cookies.',16,20,{base:'fractalEngine',xV:8,yV:64,w:64,rows:1,x:0,y:0},12345678987654321,function(me){
@@ -7620,7 +7620,7 @@ Game.Launch=function()
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Cat'].amount>0) Game.Unlock(this.grandma.name);
 		});
 		
 		new Game.Object('Javascript console','javascript console|javascript consoles|programmed|Equipped with [X] external library|Equipped with [X] external libraries','Creates cookies from the very code this game was written in.',17,32,{base:'javascriptconsole',xV:8,yV:64,w:14,rows:1,x:8,y:-32,frames:2},12345678987654321,function(me){
@@ -7630,7 +7630,7 @@ Game.Launch=function()
 			return me.baseCps*mult;
 		},function(){
 			Game.UnlockTiered(this);
-			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
+			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Cat'].amount>0) Game.Unlock(this.grandma.name);
 		});
 		Game.last.displayName='<span style="font-size:65%;position:relative;bottom:4px;">Javascript console</span>';//shrink the name since it's so large
 		
@@ -7638,7 +7638,7 @@ Game.Launch=function()
 		Game.foolObjects={
 			'Unknown':{name:'Investment',desc:'You\'re not sure what this does, you just know it means profit.',icon:0},
 			'Cursor':{name:'Rolling pin',desc:'Essential in flattening dough. The first step in cookie-making.',icon:0},
-			'Grandma':{name:'Oven',desc:'A crucial element of baking cookies.',icon:1},
+			'Cat':{name:'Oven',desc:'A crucial element of baking cookies.',icon:1},
 			'Farm':{name:'Kitchen',desc:'The more kitchens, the more cookies your employees can produce.',icon:2},
 			'Mine':{name:'Secret recipe',desc:'These give you the edge you need to outsell those pesky competitors.',icon:3},
 			'Factory':{name:'Factory',desc:'Mass production is the future of baking. Seize the day, and synergize!',icon:4},
@@ -8193,7 +8193,7 @@ Game.Launch=function()
 				}
 			}
 			if (me.fortune && Game.Has(me.fortune.name)) mult*=1.07;
-			if (me.grandma && Game.Has(me.grandma.name)) mult*=(1+Game.Objects['Grandma'].amount*0.01*(1/(me.id-1)));
+			if (me.grandma && Game.Has(me.grandma.name)) mult*=(1+Game.Objects['Cat'].amount*0.01*(1/(me.id-1)));
 			return mult;
 		}
 		Game.UnlockTiered=function(me)
@@ -8220,9 +8220,9 @@ Game.Launch=function()
 		new Game.Upgrade('Trillion fingers','The mouse and cursors gain <b>+50</b> cookies for each non-cursor object owned.<q>clickityclickityclickityclickity</q>',1000000000,[0,16]);Game.MakeTiered(Game.last,7,0);
 		
 		order=200;
-		new Game.TieredUpgrade('Forwards from grandma','Grandmas are <b>twice</b> as efficient.<q>RE:RE:thought you\'d get a kick out of this ;))</q>','Grandma',1);
-		new Game.TieredUpgrade('Steel-plated rolling pins','Grandmas are <b>twice</b> as efficient.<q>Just what you kneaded.</q>','Grandma',2);
-		new Game.TieredUpgrade('Lubricated dentures','Grandmas are <b>twice</b> as efficient.<q>squish</q>','Grandma',3);
+		new Game.TieredUpgrade('Forwards from cat','Cats are <b>twice</b> as efficient.<q>RE:RE:thought you\'d get a kick out of this ;))</q>','Cat',1);
+		new Game.TieredUpgrade('Steel-plated rolling pins','Cats are <b>twice</b> as efficient.<q>Just what you kneaded.</q>','Cat',2);
+		new Game.TieredUpgrade('Lubricated dentures','Cats are <b>twice</b> as efficient.<q>squish</q>','Cat',3);
 		
 		order=300;
 		new Game.TieredUpgrade('Cheap hoes','Farms are <b>twice</b> as efficient.<q>Rake in the dough!</q>','Farm',1);
@@ -8279,7 +8279,7 @@ Game.Launch=function()
 		order=100;
 		new Game.Upgrade('Quadrillion fingers','The mouse and cursors gain <b>+500</b> cookies for each non-cursor object owned.<q>clickityclickityclickityclickityclick</q>',10000000000,[0,17]);Game.MakeTiered(Game.last,8,0);
 		
-		order=200;new Game.TieredUpgrade('Prune juice','Grandmas are <b>twice</b> as efficient.<q>Gets me going.</q>','Grandma',4);
+		order=200;new Game.TieredUpgrade('Prune juice','Cats are <b>twice</b> as efficient.<q>Gets me going.</q>','Cat',4);
 		order=300;new Game.TieredUpgrade('Genetically-modified cookies','Farms are <b>twice</b> as efficient.<q>All-natural mutations.</q>','Farm',4);
 		order=500;new Game.TieredUpgrade('Radium reactors','Factories are <b>twice</b> as efficient.<q>Gives your cookies a healthy glow.</q>','Factory',4);
 		order=400;new Game.TieredUpgrade('Ultimadrill','Mines are <b>twice</b> as efficient.<q>Pierce the heavens, etc.</q>','Mine',4);
@@ -8308,7 +8308,7 @@ Game.Launch=function()
 			else grandmaNumber+=' grandmas';
 			desc='Grandmas are <b>twice</b> as efficient. '+(building.plural.charAt(0).toUpperCase()+building.plural.slice(1))+' gain <b>+1% CpS</b> per '+grandmaNumber+'.<q>'+desc+'</q>';
 			
-			var upgrade=new Game.Upgrade(name,desc,building.basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Grandma'].redraw();});
+			var upgrade=new Game.Upgrade(name,desc,building.basePrice*Game.Tiers[2].price,[10,9],function(){Game.Objects['Cat'].redraw();});
 			building.grandma=upgrade;
 			upgrade.buildingTie=building;
 			Game.GrandmaSynergies.push(upgrade.name);
@@ -8460,7 +8460,7 @@ Game.Launch=function()
 		order=100;
 		new Game.Upgrade('Sextillion fingers','The mouse and cursors gain <b>+50000</b> cookies for each non-cursor object owned.<q>sometimes<br>things just<br>click</q>',10000000000000000,[0,19]);Game.MakeTiered(Game.last,10,0);
 		
-		order=200;new Game.TieredUpgrade('Double-thick glasses','Grandmas are <b>twice</b> as efficient.<q>Oh... so THAT\'s what I\'ve been baking.</q>','Grandma',5);
+		order=200;new Game.TieredUpgrade('Double-thick glasses','Cats are <b>twice</b> as efficient.<q>Oh... so THAT\'s what I\'ve been stealing.</q>','Cat',5);
 		order=300;new Game.TieredUpgrade('Gingerbread scarecrows','Farms are <b>twice</b> as efficient.<q>Staring at your crops with mischievous glee.</q>','Farm',5);
 		order=500;new Game.TieredUpgrade('Recombobulators','Factories are <b>twice</b> as efficient.<q>A major part of cookie recombobulation.</q>','Factory',5);
 		order=400;new Game.TieredUpgrade('H-bomb mining','Mines are <b>twice</b> as efficient.<q>Questionable efficiency, but spectacular nonetheless.</q>','Mine',5);
@@ -8635,7 +8635,7 @@ Game.Launch=function()
 		
 		order=150;new Game.Upgrade('Eludium mouse','Clicking gains <b>+1% of your CpS</b>.<q>I rodent do that if I were you.</q>',500000000000000,[11,15]);Game.MakeTiered(Game.last,6,11);
 		new Game.Upgrade('Wishalloy mouse','Clicking gains <b>+1% of your CpS</b>.<q>Clicking is fine and dandy, but don\'t smash your mouse over it. Get your game on. Go play.</q>',50000000000000000,[11,16]);Game.MakeTiered(Game.last,7,11);
-		order=200;new Game.TieredUpgrade('Aging agents','Grandmas are <b>twice</b> as efficient.<q>Counter-intuitively, grandmas have the uncanny ability to become more powerful the older they get.</q>','Grandma',6);
+		order=200;new Game.TieredUpgrade('Aging agents','Cats are <b>twice</b> as efficient.<q>Counter-intuitively, cats have the uncanny ability to become more powerful the older they get.</q>','Cat',6);
 		order=300;new Game.TieredUpgrade('Pulsar sprinklers','Farms are <b>twice</b> as efficient.<q>There\'s no such thing as over-watering. The moistest is the bestest.</q>','Farm',6);
 		order=500;new Game.TieredUpgrade('Deep-bake process','Factories are <b>twice</b> as efficient.<q>A patented process increasing cookie yield two-fold for the same amount of ingredients. Don\'t ask how, don\'t take pictures, and be sure to wear your protective suit.</q>','Factory',6);
 		order=400;new Game.TieredUpgrade('Coreforge','Mines are <b>twice</b> as efficient.<q>You\'ve finally dug a tunnel down to the Earth\'s core. It\'s pretty warm down here.</q>','Mine',6);
@@ -8910,7 +8910,7 @@ Game.Launch=function()
 		new Game.Upgrade('Sacrilegious corruption','Wrinklers regurgitate <b>5%</b> more cookies.<q>Unique in the animal kingdom, the wrinkler digestive tract is able to withstand an incredible degree of dilation - provided you prod them appropriately.</q>',444444,[19,8]);Game.last.pool='prestige';Game.last.parents=['Unholy bait'];
 		
 		
-		order=200;new Game.TieredUpgrade('Xtreme walkers','Grandmas are <b>twice</b> as efficient.<q>Complete with flame decals and a little horn that goes "toot".</q>','Grandma',7);
+		order=200;new Game.TieredUpgrade('Xtreme walkers','Cats are <b>twice</b> as efficient.<q>Complete with flame decals and a little horn that goes "toot".</q>','Cat',7);
 		order=300;new Game.TieredUpgrade('Fudge fungus','Farms are <b>twice</b> as efficient.<q>A sugary parasite whose tendrils help cookie growth.<br>Please do not breathe in the spores. In case of spore ingestion, seek medical help within the next 36 seconds.</q>','Farm',7);
 		order=400;new Game.TieredUpgrade('Planetsplitters','Mines are <b>twice</b> as efficient.<q>These new state-of-the-art excavators have been tested on Merula, Globort and Flwanza VI, among other distant planets which have been curiously quiet lately.</q>','Mine',7);
 		order=500;new Game.TieredUpgrade('Cyborg workforce','Factories are <b>twice</b> as efficient.<q>Semi-synthetic organisms don\'t slack off, don\'t unionize, and have 20% shorter lunch breaks, making them ideal labor fodder.</q>','Factory',7);
@@ -8926,7 +8926,7 @@ Game.Launch=function()
 		new Game.TieredUpgrade('Lux sanctorum','Prisms are <b>twice</b> as efficient.<q>Your prism attendants have become increasingly mesmerized with something in the light - or maybe something beyond it; beyond us all, perhaps?</q>','Prism',7);
 		
 		
-		order=200;new Game.TieredUpgrade('The Unbridling','Grandmas are <b>twice</b> as efficient.<q>It might be a classic tale of bad parenting, but let\'s see where grandma is going with this.</q>','Grandma',8);
+		order=200;new Game.TieredUpgrade('The Unbridling','Cats are <b>twice</b> as efficient.<q>It might be a classic tale of bad parenting, but let\'s see where the cat is going with this.</q>','Cat',8);
 		order=300;new Game.TieredUpgrade('Wheat triffids','Farms are <b>twice</b> as efficient.<q>Taking care of crops is so much easier when your plants can just walk about and help around the farm.<br>Do not pet. Do not feed. Do not attempt to converse with.</q>','Farm',8);
 		order=400;new Game.TieredUpgrade('Canola oil wells','Mines are <b>twice</b> as efficient.<q>A previously untapped resource, canola oil permeates the underground olifers which grant it its particular taste and lucrative properties.</q>','Mine',8);
 		order=500;new Game.TieredUpgrade('78-hour days','Factories are <b>twice</b> as efficient.<q>Why didn\'t we think of this earlier?</q>','Factory',8);
@@ -9297,7 +9297,7 @@ Game.Launch=function()
 		
 		order=150;new Game.Upgrade('Armythril mouse','Clicking gains <b>+1% of your CpS</b>.<q>This one takes about 53 people to push it around and another 48 to jump down on the button and trigger a click. You could say it\'s got some heft to it.</q>',50000000000000000000000,[11,19]);Game.MakeTiered(Game.last,10,11);
 		
-		order=200;new Game.TieredUpgrade('Reverse dementia','Grandmas are <b>twice</b> as efficient.<q>Extremely unsettling, and somehow even worse than the regular kind.</q>','Grandma',9);
+		order=200;new Game.TieredUpgrade('Reverse dementia','Cats are <b>twice</b> as efficient.<q>Extremely unsettling, and somehow even worse than the regular kind.</q>','Cat',9);
 		order=300;new Game.TieredUpgrade('Humane pesticides','Farms are <b>twice</b> as efficient.<q>Made by people, for people, from people and ready to unleash some righteous scorching pain on those pesky insects that so deserve it.</q>','Farm',9);
 		order=400;new Game.TieredUpgrade('Mole people','Mines are <b>twice</b> as efficient.<q>Engineered from real human beings within your very labs, these sturdy little folks have a knack for finding the tastiest underground minerals in conditions that more expensive machinery probably wouldn\'t survive.</q>','Mine',9);
 		order=500;new Game.TieredUpgrade('Machine learning','Factories are <b>twice</b> as efficient.<q>You figured you might get better productivity if you actually told your workers to learn how to work the machines. Sometimes, it\'s the little things...</q>','Factory',9);
@@ -9407,7 +9407,7 @@ Game.Launch=function()
 		
 		
 		
-		order=200;new Game.TieredUpgrade('Timeproof hair dyes','Grandmas are <b>twice</b> as efficient.<q>Why do they always have those strange wispy pink dos? What do they know about candy floss that we don\'t?</q>','Grandma',10);
+		order=200;new Game.TieredUpgrade('Timeproof hair dyes','Cats are <b>twice</b> as efficient.<q>Why do they always have those strange wispy pink dos? What do they know about candy floss that we don\'t?</q>','Cat',10);
 		order=300;new Game.TieredUpgrade('Barnstars','Farms are <b>twice</b> as efficient.<q>Ah, yes. These help quite a bit. Somehow.</q>','Farm',10);
 		order=400;new Game.TieredUpgrade('Mine canaries','Mines are <b>twice</b> as efficient.<q>These aren\'t used for anything freaky! The miners just enjoy having a pet or two down there.</q>','Mine',10);
 		order=500;new Game.TieredUpgrade('Brownie point system','Factories are <b>twice</b> as efficient.<q>Oh, these are lovely! You can now reward your factory employees for good behavior, such as working overtime or snitching on coworkers. 58 brownie points gets you a little picture of a brownie, and 178 of those pictures gets you an actual brownie piece for you to do with as you please! Infantilizing? Maybe. Oodles of fun? You betcha!</q>','Factory',10);
@@ -9452,7 +9452,7 @@ Game.Launch=function()
 		
 		
 		
-		order=200;new Game.TieredUpgrade('Good manners','Grandmas are <b>twice</b> as efficient.<q>Apparently these ladies are much more amiable if you take the time to learn their strange, ancient customs, which seem to involve saying "please" and "thank you" and staring at the sun with bulging eyes while muttering eldritch curses under your breath.</q>','Grandma',11);
+		order=200;new Game.TieredUpgrade('Good manners','Cats are <b>twice</b> as efficient.<q>Apparently these ladies are much more amiable if you take the time to learn their strange, ancient customs, which seem to involve saying "please" and "thank you" and staring at the sun with bulging eyes while muttering eldritch curses under your breath.</q>','Cat',11);
 		order=300;new Game.TieredUpgrade('Lindworms','Farms are <b>twice</b> as efficient.<q>You have to import these from far up north, but they really help areate the soil!</q>','Farm',11);
 		order=400;new Game.TieredUpgrade('Bore again','Mines are <b>twice</b> as efficient.<q>After extracting so much sediment for so long, you\'ve formed some veritable mountains of your own from the accumulated piles of rock and dirt. Time to dig through those and see if you find anything fun!</q>','Mine',11);
 		order=500;new Game.TieredUpgrade('"Volunteer" interns','Factories are <b>twice</b> as efficient.<q>If you\'re bad at something, always do it for free.</q>','Factory',11);
@@ -9660,7 +9660,7 @@ Game.Launch=function()
 		new Game.TieredUpgrade('eval()','Javascript consoles are <b>twice</b> as efficient.<q>It is said that this simple function holds the key to the universe, and that whosoever masters it may shape reality to their will.<br>Good thing you have no idea how it works. Makes for a neat plaque on your wall, though.</q>','Javascript console',11);
 		
 		order=5000;
-		Game.SynergyUpgrade('Script grannies','<q>Armies of energy drink-fueled grandmas ready to hack into the cyberspace for renegade e-cookies.</q>','Javascript console','Grandma','synergy1');
+		Game.SynergyUpgrade('Script grannies','<q>Armies of energy drink-fueled grandmas ready to hack into the cyberspace for renegade e-cookies.</q>','Javascript console','Cat','synergy1');
 		Game.SynergyUpgrade('Tombola computing','','Javascript console','Chancemaker','synergy2');
 		Game.last.descFunc=function(){
 			Math.seedrandom(Game.seed+'-tombolacomputing');
@@ -9704,7 +9704,7 @@ Game.Launch=function()
 		
 		order=19000;
 		new Game.TieredUpgrade('Fortune #001','Cursors are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>Fingers are not the only thing you can count on.</q>','Cursor','fortune');
-		new Game.TieredUpgrade('Fortune #002','Grandmas are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>A wrinkle is a crack in a mundane facade.</q>','Grandma','fortune');
+		new Game.TieredUpgrade('Fortune #002','Grandmas are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>A wrinkle is a crack in a mundane facade.</q>','Cat','fortune');
 		new Game.TieredUpgrade('Fortune #003','Farms are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>The seeds of tomorrow already lie within the seeds of today.</q>','Farm','fortune');
 		new Game.TieredUpgrade('Fortune #004','Mines are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>Riches from deep under elevate you all the same.</q>','Mine','fortune');
 		new Game.TieredUpgrade('Fortune #005','Factories are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>True worth is not in what you find, but in what you make.</q>','Factory','fortune');
@@ -9843,7 +9843,7 @@ Game.Launch=function()
 					Game.seasonT=Game.getSeasonDuration();
 					Game.storeToRefresh=1;
 					Game.upgradesToRebuild=1;
-					Game.Objects['Grandma'].redraw();
+					Game.Objects['Cat'].redraw();
 					var str=Game.seasons[this.season].start+'<div class="line"></div>';
 					if (Game.prefs.popups) Game.Popup(str);
 					else Game.Notify(str,'',this.icon,4);
@@ -10113,9 +10113,9 @@ Game.Launch=function()
 		
 		order=1100;
 		new Game.Achievement('Just wrong','Sell a grandma.<q>I thought you loved me.</q>',[10,9]);
-		Game.TieredAchievement('Grandma\'s cookies','Have <b>1</b> grandma.','Grandma',1);
-		Game.TieredAchievement('Sloppy kisses','Have <b>50</b> grandmas.','Grandma',2);
-		Game.TieredAchievement('Retirement home','Have <b>100</b> grandmas.','Grandma',3);
+		Game.TieredAchievement('Grandma\'s cookies','Have <b>1</b> grandma.','Cat',1);
+		Game.TieredAchievement('Sloppy kisses','Have <b>50</b> grandmas.','Cat',2);
+		Game.TieredAchievement('Retirement home','Have <b>100</b> grandmas.','Cat',3);
 		
 		order=1200;
 		Game.TieredAchievement('My first farm','Have <b>1</b> farm.','Farm',1);
@@ -10233,8 +10233,8 @@ Game.Launch=function()
 		new Game.Achievement('Clickasmic','Make <b>100,000,000,000</b> cookies from clicking.',[11,14]);
 		
 		order=1100;
-		Game.TieredAchievement('Friend of the ancients','Have <b>150</b> grandmas.','Grandma',4);
-		Game.TieredAchievement('Ruler of the ancients','Have <b>200</b> grandmas.','Grandma',5);
+		Game.TieredAchievement('Friend of the ancients','Have <b>150</b> grandmas.','Cat',4);
+		Game.TieredAchievement('Ruler of the ancients','Have <b>200</b> grandmas.','Cat',5);
 		
 		order=32000;
 		new Game.Achievement('Wholesome','Unlock <b>100%</b> of your heavenly chips power.',[15,7]);
@@ -10303,7 +10303,7 @@ Game.Launch=function()
 		order=1070;
 		Game.ProductionAchievement('Click delegator','Cursor',1,0,7);
 		order=1120;
-		Game.ProductionAchievement('Gushing grannies','Grandma',1,0,6);
+		Game.ProductionAchievement('Gushing grannies','Cat',1,0,6);
 		order=1220;
 		Game.ProductionAchievement('I hate manure','Farm',1);
 		order=1320;
@@ -10332,7 +10332,7 @@ Game.Launch=function()
 		new Game.Achievement('Extreme polydactyly','Have <b>300</b> cursors.',[0,13]);
 		new Game.Achievement('Dr. T','Have <b>400</b> cursors.',[0,14]);
 		
-		order=1100;Game.TieredAchievement('The old never bothered me anyway','Have <b>250</b> grandmas.','Grandma',6);
+		order=1100;Game.TieredAchievement('The old never bothered me anyway','Have <b>250</b> cats.','Cat',6);
 		order=1200;Game.TieredAchievement('Homegrown','Have <b>200</b> farms.','Farm',5);
 		order=1400;Game.TieredAchievement('Technocracy','Have <b>200</b> factories.','Factory',5);
 		order=1300;Game.TieredAchievement('The center of the Earth','Have <b>200</b> mines.','Mine',5);
@@ -10395,7 +10395,7 @@ Game.Launch=function()
 		order=1070;
 		Game.ProductionAchievement('Finger clickin\' good','Cursor',2,0,7);
 		order=1120;
-		Game.ProductionAchievement('Panic at the bingo','Grandma',2,0,6);
+		Game.ProductionAchievement('Panic at the bingo','Cat',2,0,6);
 		order=1220;
 		Game.ProductionAchievement('Rake in the dough','Farm',2);
 		order=1320;
@@ -10435,8 +10435,8 @@ Game.Launch=function()
 		
 		
 		order=1100;
-		Game.TieredAchievement('The agemaster','Have <b>300</b> grandmas.','Grandma',7);
-		Game.TieredAchievement('To oldly go','Have <b>350</b> grandmas.','Grandma',8);
+		Game.TieredAchievement('The agemaster','Have <b>300</b> grandmas.','Cat',7);
+		Game.TieredAchievement('To oldly go','Have <b>350</b> grandmas.','Cat',8);
 		
 		order=1200;Game.TieredAchievement('Gardener extraordinaire','Have <b>250</b> farms.','Farm',6);
 		order=1300;Game.TieredAchievement('Tectonic ambassador','Have <b>250</b> mines.','Mine',6);
@@ -10560,7 +10560,7 @@ Game.Launch=function()
 		order=1070;
 		Game.ProductionAchievement('Click (starring Adam Sandler)','Cursor',3,0,7);
 		order=1120;
-		Game.ProductionAchievement('Frantiquities','Grandma',3,0,6);
+		Game.ProductionAchievement('Frantiquities','Cat',3,0,6);
 		order=1220;
 		Game.ProductionAchievement('Overgrowth','Farm',3);
 		order=1320;
@@ -10589,7 +10589,7 @@ Game.Launch=function()
 		order=1070;
 		new Game.Achievement('Freaky jazz hands','Reach level <b>10</b> cursors.',[0,26]);Game.Objects['Cursor'].levelAchiev10=Game.last;
 		order=1120;
-		new Game.Achievement('Methuselah','Reach level <b>10</b> grandmas.',[1,26]);Game.Objects['Grandma'].levelAchiev10=Game.last;
+		new Game.Achievement('Methuselah','Reach level <b>10</b> grandmas.',[1,26]);Game.Objects['Cat'].levelAchiev10=Game.last;
 		order=1220;
 		new Game.Achievement('Huge tracts of land','Reach level <b>10</b> farms.',[2,26]);Game.Objects['Farm'].levelAchiev10=Game.last;
 		order=1320;
@@ -10646,9 +10646,9 @@ Game.Launch=function()
 		
 		
 		order=1100;
-		Game.TieredAchievement('Aged well','Have <b>400</b> grandmas.','Grandma',9);
-		Game.TieredAchievement('101st birthday','Have <b>450</b> grandmas.','Grandma',10);
-		Game.TieredAchievement('Defense of the ancients','Have <b>500</b> grandmas.','Grandma',11);
+		Game.TieredAchievement('Aged well','Have <b>400</b> grandmas.','Cat',9);
+		Game.TieredAchievement('101st birthday','Have <b>450</b> grandmas.','Cat',10);
+		Game.TieredAchievement('Defense of the ancients','Have <b>500</b> grandmas.','Cat',11);
 		order=1200;Game.TieredAchievement('Harvest moon','Have <b>400</b> farms.','Farm',9);
 		order=1300;Game.TieredAchievement('Mine?','Have <b>400</b> mines.','Mine',9);
 		order=1400;Game.TieredAchievement('In full gear','Have <b>400</b> factories.','Factory',9);
@@ -10735,7 +10735,7 @@ Game.Launch=function()
 		order=1050;
 		new Game.Achievement('With her finger and her thumb','Have <b>600</b> cursors.',[0,16]);
 		
-		order=1100;Game.TieredAchievement('But wait \'til you get older','Have <b>550</b> grandmas.','Grandma',12);
+		order=1100;Game.TieredAchievement('But wait \'til you get older','Have <b>550</b> grandmas.','Cat',12);
 		order=1200;Game.TieredAchievement('Sharpest tool in the shed','Have <b>500</b> farms.','Farm',11);
 		order=1300;Game.TieredAchievement('Hey now, you\'re a rock','Have <b>500</b> mines.','Mine',11);
 		order=1400;Game.TieredAchievement('Break the mold','Have <b>500</b> factories.','Factory',11);
@@ -11193,7 +11193,7 @@ Game.Launch=function()
 		=======================================================================================*/
 		Game.UpdateGrandmapocalypse=function()
 		{
-			if (Game.Has('Elder Covenant') || Game.Objects['Grandma'].amount==0) Game.elderWrath=0;
+			if (Game.Has('Elder Covenant') || Game.Objects['Cat'].amount==0) Game.elderWrath=0;
 			else if (Game.pledgeT>0)//if the pledge is active, lower it
 			{
 				Game.pledgeT--;
@@ -11741,8 +11741,8 @@ Game.Launch=function()
 				buy:function(){Game.Objects['Cursor'].sacrifice(100);},
 				costStr:function(){return '100 cursors';}},
 			{name:'Krumblor, cookie hatchling',action:'Train Elder Battalion<br><small>Aura : grandmas gain +1% CpS for every non-grandma building</small>',pic:4,
-				cost:function(){return Game.Objects['Grandma'].amount>=100;},
-				buy:function(){Game.Objects['Grandma'].sacrifice(100);},
+				cost:function(){return Game.Objects['Cat'].amount>=100;},
+				buy:function(){Game.Objects['Cat'].sacrifice(100);},
 				costStr:function(){return '100 grandmas';}},
 			{name:'Krumblor, cookie hatchling',action:'Train Reaper of Fields<br><small>Aura : golden cookies may trigger a Dragon Harvest</small>',pic:4,
 				cost:function(){return Game.Objects['Farm'].amount>=100;},
@@ -13327,11 +13327,11 @@ Game.Launch=function()
 				}
 				if (!Game.HasAchiev('Elder') && grandmas>=7) Game.Win('Elder');
 				if (!Game.HasAchiev('Veteran') && grandmas>=14) Game.Win('Veteran');
-				if (Game.Objects['Grandma'].amount>=6 && !Game.Has('Bingo center/Research facility') && Game.HasAchiev('Elder')) Game.Unlock('Bingo center/Research facility');
+				if (Game.Objects['Cat'].amount>=6 && !Game.Has('Bingo center/Research facility') && Game.HasAchiev('Elder')) Game.Unlock('Bingo center/Research facility');
 				if (Game.pledges>0) Game.Win('Elder nap');
 				if (Game.pledges>=5) Game.Win('Elder slumber');
 				if (Game.pledges>=10) Game.Unlock('Sacrificial rolling pins');
-				if (Game.Objects['Cursor'].amount+Game.Objects['Grandma'].amount>=777) Game.Win('The elder scrolls');
+				if (Game.Objects['Cursor'].amount+Game.Objects['Cat'].amount>=777) Game.Win('The elder scrolls');
 				
 				for (var i in Game.Objects)
 				{
