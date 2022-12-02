@@ -7405,7 +7405,7 @@ Game.Launch=function()
 		});
 		
 		Game.SpecialGrandmaUnlock=15;
-		new Game.Object('Cat','cat|cats|baked|Cats are [X] year older|Cats are [X] years older','A nice cat to give more dabloons.',1,1,{pic:function(i){
+		new Game.Object('Grandma','cat|cats|baked|Cats are [X] year older|Cats are [X] years older','A nice cat to give more dabloons.',1,1,{pic:function(i){
 			var list=['grandma'];
 			if (Game.Has('Farmer grandmas')) list.push('farmerGrandma');
 			if (Game.Has('Worker grandmas')) list.push('workerGrandma');
