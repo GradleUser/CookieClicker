@@ -6934,7 +6934,6 @@ Game.Launch=function()
 					displayName=name;
 					if (name.length>16) displayName='<span style="font-size:75%;">'+name+'</span>';
 				}
-				icon=[0,me.icon];
 				icon=[icon[0]*64,icon[1]*64];
 				iconOff=[iconOff[0]*64,iconOff[1]*64];
 				
