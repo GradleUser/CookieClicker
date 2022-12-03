@@ -6197,32 +6197,32 @@ Game.Launch=function()
 			
 			if (list.length==0)
 			{
-				if (Game.cookiesEarned<5) list.push('You feel like making cookies. But nobody wants to eat your cookies.');
-				else if (Game.cookiesEarned<50) list.push('Your first batch goes to the trash. The neighborhood raccoon barely touches it.');
-				else if (Game.cookiesEarned<100) list.push('Your family accepts to try some of your cookies.');
-				else if (Game.cookiesEarned<500) list.push('Your cookies are popular in the neighborhood.');
-				else if (Game.cookiesEarned<1000) list.push('People are starting to talk about your cookies.');
-				else if (Game.cookiesEarned<5000) list.push('Your cookies are talked about for miles around.');
-				else if (Game.cookiesEarned<10000) list.push('Your cookies are renowned in the whole town!');
-				else if (Game.cookiesEarned<50000) list.push('Your cookies bring all the boys to the yard.');
-				else if (Game.cookiesEarned<100000) list.push('Your cookies now have their own website!');
-				else if (Game.cookiesEarned<500000) list.push('Your cookies are worth a lot of money.');
-				else if (Game.cookiesEarned<1000000) list.push('Your cookies sell very well in distant countries.');
-				else if (Game.cookiesEarned<5000000) list.push('People come from very far away to get a taste of your cookies.');
-				else if (Game.cookiesEarned<10000000) list.push('Kings and queens from all over the world are enjoying your cookies.');
-				else if (Game.cookiesEarned<50000000) list.push('There are now museums dedicated to your cookies.');
-				else if (Game.cookiesEarned<100000000) list.push('A national day has been created in honor of your cookies.');
-				else if (Game.cookiesEarned<500000000) list.push('Your cookies have been named a part of the world wonders.');
-				else if (Game.cookiesEarned<1000000000) list.push('History books now include a whole chapter about your cookies.');
-				else if (Game.cookiesEarned<5000000000) list.push('Your cookies have been placed under government surveillance.');
-				else if (Game.cookiesEarned<10000000000) list.push('The whole planet is enjoying your cookies!');
-				else if (Game.cookiesEarned<50000000000) list.push('Strange creatures from neighboring planets wish to try your cookies.');
-				else if (Game.cookiesEarned<100000000000) list.push('Elder gods from the whole cosmos have awoken to taste your cookies.');
-				else if (Game.cookiesEarned<500000000000) list.push('Beings from other dimensions lapse into existence just to get a taste of your cookies.');
-				else if (Game.cookiesEarned<1000000000000) list.push('Your cookies have achieved sentience.');
-				else if (Game.cookiesEarned<5000000000000) list.push('The universe has now turned into cookie dough, to the molecular level.');
-				else if (Game.cookiesEarned<10000000000000) list.push('Your cookies are rewriting the fundamental laws of the universe.');
-				else if (Game.cookiesEarned<10000000000000) list.push('A local news station runs a 10-minute segment about your cookies. Success!<br><span style="font-size:50%;">(you win a cookie)</span>');
+				if (Game.cookiesEarned<5) list.push('You feel like earning dabloons. But your still broke.');
+				else if (Game.cookiesEarned<50) list.push('Your first attempts fail. No cats care for you yet.');
+				else if (Game.cookiesEarned<100) list.push('Some cats agree to give you some Dabloons.');
+				else if (Game.cookiesEarned<500) list.push('Your dabloons are getting useful.');
+				else if (Game.cookiesEarned<1000) list.push('People are starting to talk about your dabloons.');
+				else if (Game.cookiesEarned<5000) list.push('Your dabloons are talked about for miles around.');
+				else if (Game.cookiesEarned<10000) list.push('Your wealth are renowned in the whole town!');
+				else if (Game.cookiesEarned<50000) list.push('Your dabloons bring all the boys to the yard.');
+				else if (Game.cookiesEarned<100000) list.push('Your portfolio now has its own website!');
+				else if (Game.cookiesEarned<500000) list.push('Your dabloons are worth a lot of money.');
+				else if (Game.cookiesEarned<1000000) list.push('Your buissness sell very well in distant countries.');
+				else if (Game.cookiesEarned<5000000) list.push('People come from very far away to get a taste of your wealth.');
+				else if (Game.cookiesEarned<10000000) list.push('Kings and queens from all over the world are enjoying your wealth.');
+				else if (Game.cookiesEarned<50000000) list.push('There are now museums dedicated to your life.');
+				else if (Game.cookiesEarned<100000000) list.push('A national day has been created in honor of your wealth.');
+				else if (Game.cookiesEarned<500000000) list.push('Your dabloons have been named a part of the world wonders.');
+				else if (Game.cookiesEarned<1000000000) list.push('History books now include a whole chapter about your wealth.');
+				else if (Game.cookiesEarned<5000000000) list.push('Your house have been placed under government surveillance.');
+				else if (Game.cookiesEarned<10000000000) list.push('The whole planet is enjoying your wealth!');
+				else if (Game.cookiesEarned<50000000000) list.push('Strange creatures from neighboring planets wish to steal your dabloons.');
+				else if (Game.cookiesEarned<100000000000) list.push('Elder gods from the whole cosmos have awoken to look at your dabloons.');
+				else if (Game.cookiesEarned<500000000000) list.push('Beings from other dimensions lapse into existence just to get a taste of your wealth.');
+				else if (Game.cookiesEarned<1000000000000) list.push('Your dabloons have achieved sentience.');
+				else if (Game.cookiesEarned<5000000000000) list.push('The universe has now turned into dabloons, to the molecular level.');
+				else if (Game.cookiesEarned<10000000000000) list.push('Your dabloons are rewriting the fundamental laws of the universe.');
+				else if (Game.cookiesEarned<10000000000000) list.push('A local news station runs a 10-minute segment about your dabloons. Success!<br><span style="font-size:50%;">(you win a dabloon)</span>');
 				else if (Game.cookiesEarned<10100000000000) list.push('it\'s time to stop playing');//only show this for 100 millions (it's funny for a moment)
 			}
 			
@@ -6232,10 +6232,10 @@ Game.Launch=function()
 				list=[];
 				if (Game.elderWrath==1) list.push(choose([
 					'News : millions of old ladies reported missing!',
-					'News : processions of old ladies sighted around cookie facilities!',
+					'News : processions of old ladies sighted around dabloon facilities!',
 					'News : families around the continent report agitated, transfixed grandmothers!',
 					'News : doctors swarmed by cases of old women with glassy eyes and a foamy mouth!',
-					'News : nurses report "strange scent of cookie dough" around female elderly patients!'
+					'News : nurses report "strange scent of gold" around female elderly patients!'
 				]));
 				if (Game.elderWrath==2) list.push(choose([
 					'News : town in disarray as strange old ladies break into homes to abduct infants and baking utensils!',
@@ -13361,9 +13361,9 @@ Game.Launch=function()
 		
 		if (Game.T%(Game.fps*2)==0)
 		{
-			var title='Cookie Clicker';
+			var title='Dabloon Clicker';
 			if (Game.season=='fools') title='Cookie Baker';
-			document.title=(Game.OnAscend?'Ascending! ':'')+Beautify(Game.cookies)+' '+(Game.cookies==1?'cookie':'cookies')+' - '+title;
+			document.title=(Game.OnAscend?'Ascending! ':'')+Beautify(Game.cookies)+' '+(Game.cookies==1?'dabloon':'dabloons')+' - '+title;
 		}
 		if (Game.T%15==0)
 		{
