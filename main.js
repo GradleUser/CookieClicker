@@ -4900,7 +4900,7 @@ Game.Launch=function()
 		Game.goldenCookieBuildingBuffs={
 			'Cursor':['High-five','Slap to the face'],
 			'Cat':['Congregation','Senility'],
-			'Farm':['Luxuriant harvest','Locusts'],
+			'Catnip':['Luxuriant harvest','Locusts'],
 			'Mine':['Ore vein','Cave-in'],
 			'Factory':['Oiled-up','Jammed machinery'],
 			'Bank':['Juicy profits','Recession'],
@@ -5891,7 +5891,7 @@ Game.Launch=function()
 					'<q>Too late.</q><sig>grandma</sig>'
 					]));
 					
-					if (Game.Objects['Farm'].amount>0) list.push(choose([
+					if (Game.Objects['Catnip'].amount>0) list.push(choose([
 					'News : cookie farms suspected of employing undeclared elderly workforce!',
 					'News : cookie farms release harmful chocolate in our rivers, says scientist!',
 					'News : genetically-modified chocolate controversy strikes cookie farmers!',
@@ -6284,7 +6284,7 @@ Game.Launch=function()
 					'Your ovens burn a whole batch. Ah well! Still good.'
 					]));
 					
-					if (Game.Objects['Farm'].amount>0) list.push(choose([
+					if (Game.Objects['Catnip'].amount>0) list.push(choose([
 					'Scores of cookies come out of your kitchens.',
 					'Today, new recruits are joining your kitchens!'
 					]));
@@ -6849,7 +6849,7 @@ Game.Launch=function()
 					(me.amount>0?'&bull; each '+me.single+' produces <b>'+Beautify((me.storedTotalCps/me.amount)*Game.globalCpsMult,1)+'</b> '+((me.storedTotalCps/me.amount)*Game.globalCpsMult==1?'dabloon':'dabloons')+' per second<br>':'')+
 					'&bull; '+me.amount+' '+(me.amount==1?me.single:me.plural)+' producing <b>'+Beautify(me.storedTotalCps*Game.globalCpsMult,1)+'</b> '+(me.storedTotalCps*Game.globalCpsMult==1?'dabloon':'dabloons')+' per second (<b>'+Beautify(Game.cookiesPs>0?((me.amount>0?((me.storedTotalCps*Game.globalCpsMult)/Game.cookiesPs):0)*100):0,1)+'%</b> of total CpS)<br>'+
 					(synergiesStr?('&bull; '+synergiesStr+'<br>'):'')+
-					'&bull; <b>'+Beautify(me.totalCookies)+'</b> '+(Math.floor(me.totalCookies)==1?'cookie':'cookies')+' '+me.actionName+' so far</div>'
+					'&bull; <b>'+Beautify(me.totalCookies)+'</b> '+(Math.floor(me.totalCookies)==1?'dabloon':'dabloons')+' '+me.actionName+' so far</div>'
 				):'')+
 				'</div>';
 			}
@@ -7474,7 +7474,7 @@ Game.Launch=function()
 		};
 		
 		
-		new Game.Object('Farm','farm|farms|harvested|[X] more acre|[X] more acres','Grows cookie plants from cookie seeds.',3,2,{base:'farm',xV:8,yV:8,w:64,rows:2,x:0,y:16},500,function(me){
+		new Game.Object('Catnip','catnip|catnips|attracted|[X] more pile|[X] more piles','Attracts cats to get dabloons.',3,2,{base:'farm',xV:8,yV:8,w:64,rows:2,x:0,y:16},500,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			mult*=Game.magicCpS(me.name);
@@ -7639,7 +7639,7 @@ Game.Launch=function()
 			'Unknown':{name:'Investment',desc:'You\'re not sure what this does, you just know it means profit.',icon:0},
 			'Cursor':{name:'Rolling pin',desc:'Essential in flattening dough. The first step in cookie-making.',icon:0},
 			'Cat':{name:'Oven',desc:'A crucial element of baking cookies.',icon:1},
-			'Farm':{name:'Kitchen',desc:'The more kitchens, the more cookies your employees can produce.',icon:2},
+			'Catnip':{name:'Kitchen',desc:'The more kitchens, the more cookies your employees can produce.',icon:2},
 			'Mine':{name:'Secret recipe',desc:'These give you the edge you need to outsell those pesky competitors.',icon:3},
 			'Factory':{name:'Factory',desc:'Mass production is the future of baking. Seize the day, and synergize!',icon:4},
 			'Bank':{name:'Investor',desc:'Business folks with a nose for profit, ready to finance your venture as long as there\'s money to be made.',icon:5},
@@ -8225,9 +8225,9 @@ Game.Launch=function()
 		new Game.TieredUpgrade('Lubricated dentures','Cats are <b>twice</b> as efficient.<q>squish</q>','Cat',3);
 		
 		order=300;
-		new Game.TieredUpgrade('Cheap hoes','Farms are <b>twice</b> as efficient.<q>Rake in the dough!</q>','Farm',1);
-		new Game.TieredUpgrade('Fertilizer','Farms are <b>twice</b> as efficient.<q>It\'s chocolate, I swear.</q>','Farm',2);
-		new Game.TieredUpgrade('Cookie trees','Farms are <b>twice</b> as efficient.<q>A relative of the breadfruit.</q>','Farm',3);
+		new Game.TieredUpgrade('Cheaper Catnip','Catnip is <b>twice</b> as efficient.<q>Bring in the cats!</q>','Catnip',1);
+		new Game.TieredUpgrade('Fertilizer','Catnip is <b>twice</b> as efficient.<q>It\'s not drugged, I swear.</q>','Catnip',2);
+		new Game.TieredUpgrade('Catnip Explosion','Catnip is <b>twice</b> as efficient.<q>A relative of the breadfruit.</q>','Catnip',3);
 		
 		order=500;
 		new Game.TieredUpgrade('Sturdier conveyor belts','Factories are <b>twice</b> as efficient.<q>You\'re going places.</q>','Factory',1);
@@ -8280,7 +8280,7 @@ Game.Launch=function()
 		new Game.Upgrade('Quadrillion fingers','The mouse and cursors gain <b>+500</b> cookies for each non-cursor object owned.<q>clickityclickityclickityclickityclick</q>',10000000000,[0,17]);Game.MakeTiered(Game.last,8,0);
 		
 		order=200;new Game.TieredUpgrade('Prune juice','Cats are <b>twice</b> as efficient.<q>Gets me going.</q>','Cat',4);
-		order=300;new Game.TieredUpgrade('Genetically-modified cookies','Farms are <b>twice</b> as efficient.<q>All-natural mutations.</q>','Farm',4);
+		order=300;new Game.TieredUpgrade('Genetically-modified catnip','Catnip is <b>twice</b> as efficient.<q>All-natural mutations.</q>','Catnip',4);
 		order=500;new Game.TieredUpgrade('Radium reactors','Factories are <b>twice</b> as efficient.<q>Gives your cookies a healthy glow.</q>','Factory',4);
 		order=400;new Game.TieredUpgrade('Ultimadrill','Mines are <b>twice</b> as efficient.<q>Pierce the heavens, etc.</q>','Mine',4);
 		order=600;new Game.TieredUpgrade('Warp drive','Shipments are <b>twice</b> as efficient.<q>To boldly bake.</q>','Shipment',4);
@@ -8316,7 +8316,7 @@ Game.Launch=function()
 		}
 		
 		order=250;
-		Game.GrandmaSynergy('Farmer grandmas','A nice farmer to grow more cookies.','Farm');
+		Game.GrandmaSynergy('Farmer grandmas','A nice farmer to grow more cookies.','Catnip');
 		Game.GrandmaSynergy('Miner grandmas','A nice miner to dig more cookies.','Mine');
 		Game.GrandmaSynergy('Worker grandmas','A nice worker to manufacture more cookies.','Factory');
 		Game.GrandmaSynergy('Cosmic grandmas','A nice thing to... uh... cookies.','Shipment');
@@ -8461,7 +8461,7 @@ Game.Launch=function()
 		new Game.Upgrade('Sextillion fingers','The mouse and cursors gain <b>+50000</b> cookies for each non-cursor object owned.<q>sometimes<br>things just<br>click</q>',10000000000000000,[0,19]);Game.MakeTiered(Game.last,10,0);
 		
 		order=200;new Game.TieredUpgrade('Double-thick glasses','Cats are <b>twice</b> as efficient.<q>Oh... so THAT\'s what I\'ve been stealing.</q>','Cat',5);
-		order=300;new Game.TieredUpgrade('Gingerbread scarecrows','Farms are <b>twice</b> as efficient.<q>Staring at your crops with mischievous glee.</q>','Farm',5);
+		order=300;new Game.TieredUpgrade('Gingerbread Cats','Catnip is <b>twice</b> as efficient.<q>Staring at your catnip with mischievous glee.</q>','Catnip',5);
 		order=500;new Game.TieredUpgrade('Recombobulators','Factories are <b>twice</b> as efficient.<q>A major part of cookie recombobulation.</q>','Factory',5);
 		order=400;new Game.TieredUpgrade('H-bomb mining','Mines are <b>twice</b> as efficient.<q>Questionable efficiency, but spectacular nonetheless.</q>','Mine',5);
 		order=600;new Game.TieredUpgrade('Chocolate monoliths','Shipments are <b>twice</b> as efficient.<q>My god. It\'s full of chocolate bars.</q>','Shipment',5);
@@ -8636,7 +8636,7 @@ Game.Launch=function()
 		order=150;new Game.Upgrade('Eludium mouse','Clicking gains <b>+1% of your CpS</b>.<q>I rodent do that if I were you.</q>',500000000000000,[11,15]);Game.MakeTiered(Game.last,6,11);
 		new Game.Upgrade('Wishalloy mouse','Clicking gains <b>+1% of your CpS</b>.<q>Clicking is fine and dandy, but don\'t smash your mouse over it. Get your game on. Go play.</q>',50000000000000000,[11,16]);Game.MakeTiered(Game.last,7,11);
 		order=200;new Game.TieredUpgrade('Aging agents','Cats are <b>twice</b> as efficient.<q>Counter-intuitively, cats have the uncanny ability to become more powerful the older they get.</q>','Cat',6);
-		order=300;new Game.TieredUpgrade('Pulsar sprinklers','Farms are <b>twice</b> as efficient.<q>There\'s no such thing as over-watering. The moistest is the bestest.</q>','Farm',6);
+		order=300;new Game.TieredUpgrade('Pulsar sprinklers','Catnip is <b>twice</b> as efficient.<q>There\'s no such thing as too much catnip. The moistest is the bestest.</q>','Catnip',6);
 		order=500;new Game.TieredUpgrade('Deep-bake process','Factories are <b>twice</b> as efficient.<q>A patented process increasing cookie yield two-fold for the same amount of ingredients. Don\'t ask how, don\'t take pictures, and be sure to wear your protective suit.</q>','Factory',6);
 		order=400;new Game.TieredUpgrade('Coreforge','Mines are <b>twice</b> as efficient.<q>You\'ve finally dug a tunnel down to the Earth\'s core. It\'s pretty warm down here.</q>','Mine',6);
 		order=600;new Game.TieredUpgrade('Generation ship','Shipments are <b>twice</b> as efficient.<q>Built to last, this humongous spacecraft will surely deliver your cookies to the deep ends of space, one day.</q>','Shipment',6);
@@ -8911,7 +8911,7 @@ Game.Launch=function()
 		
 		
 		order=200;new Game.TieredUpgrade('Xtreme walkers','Cats are <b>twice</b> as efficient.<q>Complete with flame decals and a little horn that goes "toot".</q>','Cat',7);
-		order=300;new Game.TieredUpgrade('Fudge fungus','Farms are <b>twice</b> as efficient.<q>A sugary parasite whose tendrils help cookie growth.<br>Please do not breathe in the spores. In case of spore ingestion, seek medical help within the next 36 seconds.</q>','Farm',7);
+		order=300;new Game.TieredUpgrade('Fudge fungus','Farms are <b>twice</b> as efficient.<q>A sugary parasite whose tendrils help cookie growth.<br>Please do not breathe in the spores. In case of spore ingestion, seek medical help within the next 36 seconds.</q>','Catnip',7);
 		order=400;new Game.TieredUpgrade('Planetsplitters','Mines are <b>twice</b> as efficient.<q>These new state-of-the-art excavators have been tested on Merula, Globort and Flwanza VI, among other distant planets which have been curiously quiet lately.</q>','Mine',7);
 		order=500;new Game.TieredUpgrade('Cyborg workforce','Factories are <b>twice</b> as efficient.<q>Semi-synthetic organisms don\'t slack off, don\'t unionize, and have 20% shorter lunch breaks, making them ideal labor fodder.</q>','Factory',7);
 		order=525;new Game.TieredUpgrade('Way of the wallet','Banks are <b>twice</b> as efficient.<q>This new monetary school of thought is all the rage on the banking scene; follow its precepts and you may just profit from it.</q>','Bank',7);
@@ -8927,7 +8927,7 @@ Game.Launch=function()
 		
 		
 		order=200;new Game.TieredUpgrade('The Unbridling','Cats are <b>twice</b> as efficient.<q>It might be a classic tale of bad parenting, but let\'s see where the cat is going with this.</q>','Cat',8);
-		order=300;new Game.TieredUpgrade('Wheat triffids','Farms are <b>twice</b> as efficient.<q>Taking care of crops is so much easier when your plants can just walk about and help around the farm.<br>Do not pet. Do not feed. Do not attempt to converse with.</q>','Farm',8);
+		order=300;new Game.TieredUpgrade('Wheat triffids','Farms are <b>twice</b> as efficient.<q>Taking care of crops is so much easier when your plants can just walk about and help around the farm.<br>Do not pet. Do not feed. Do not attempt to converse with.</q>','Catnip',8);
 		order=400;new Game.TieredUpgrade('Canola oil wells','Mines are <b>twice</b> as efficient.<q>A previously untapped resource, canola oil permeates the underground olifers which grant it its particular taste and lucrative properties.</q>','Mine',8);
 		order=500;new Game.TieredUpgrade('78-hour days','Factories are <b>twice</b> as efficient.<q>Why didn\'t we think of this earlier?</q>','Factory',8);
 		order=525;new Game.TieredUpgrade('The stuff rationale','Banks are <b>twice</b> as efficient.<q>If not now, when? If not it, what? If not things... stuff?</q>','Bank',8);
@@ -9156,8 +9156,8 @@ Game.Launch=function()
 		
 		
 		order=5000;
-		Game.SynergyUpgrade('Future almanacs','<q>Lets you predict optimal planting times. It\'s crazy what time travel can do!</q>','Farm','Time machine','synergy1');
-		Game.SynergyUpgrade('Rain prayer','<q>A deeply spiritual ceremonial involving complicated dance moves and high-tech cloud-busting lasers.</q>','Farm','Temple','synergy2');
+		Game.SynergyUpgrade('Future almanacs','<q>Lets you predict optimal planting times. It\'s crazy what time travel can do!</q>','Catnip','Time machine','synergy1');
+		Game.SynergyUpgrade('Rain prayer','<q>A deeply spiritual ceremonial involving complicated dance moves and high-tech cloud-busting lasers.</q>','Catnip','Temple','synergy2');
 		
 		Game.SynergyUpgrade('Seismic magic','<q>Surprise earthquakes are an old favorite of wizardly frat houses.</q>','Mine','Wizard tower','synergy1');
 		Game.SynergyUpgrade('Asteroid mining','<q>As per the <span>19</span>74 United Cosmic Convention, comets, moons, and inhabited planetoids are no longer legally excavatable.<br>But hey, a space bribe goes a long way.</q>','Mine','Shipment','synergy2');
@@ -9172,7 +9172,7 @@ Game.Launch=function()
 		Game.SynergyUpgrade('God particle','<q>Turns out God is much tinier than we thought, I guess.</q>','Temple','Antimatter condenser','synergy2');
 		
 		Game.SynergyUpgrade('Arcane knowledge','<q>Some things were never meant to be known - only mildly speculated.</q>','Wizard tower','Alchemy lab','synergy1');
-		Game.SynergyUpgrade('Magical botany','<q>Already known in some reactionary newspapers as "the wizard\'s GMOs".</q>','Wizard tower','Farm','synergy2');
+		Game.SynergyUpgrade('Magical botany','<q>Already known in some reactionary newspapers as "the wizard\'s GMOs".</q>','Wizard tower','Catnip','synergy2');
 		
 		Game.SynergyUpgrade('Fossil fuels','<q>Somehow better than plutonium for powering rockets.<br>Extracted from the fuels of ancient, fossilized civilizations.</q>','Shipment','Mine','synergy1');
 		Game.SynergyUpgrade('Shipyards','<q>Where carpentry, blind luck, and asbestos insulation unite to produce the most dazzling spaceships on the planet.</q>','Shipment','Factory','synergy2');
@@ -9180,7 +9180,7 @@ Game.Launch=function()
 		Game.SynergyUpgrade('Primordial ores','<q>Only when refining the purest metals will you extract the sweetest sap of the earth.</q>','Alchemy lab','Mine','synergy1');
 		Game.SynergyUpgrade('Gold fund','<q>If gold is the backbone of the economy, cookies, surely, are its hip joints.</q>','Alchemy lab','Bank','synergy2');
 		
-		Game.SynergyUpgrade('Infernal crops','<q>Sprinkle regularly with FIRE.</q>','Portal','Farm','synergy1');
+		Game.SynergyUpgrade('Infernal crops','<q>Sprinkle regularly with FIRE.</q>','Portal','Catnip','synergy1');
 		Game.SynergyUpgrade('Abysmal glimmer','<q>Someone, or something, is staring back at you.<br>Perhaps at all of us.</q>','Portal','Prism','synergy2');
 		
 		Game.SynergyUpgrade('Relativistic parsec-skipping','<q>People will tell you this isn\'t physically possible.<br>These are people you don\'t want on your ship.</q>','Time machine','Shipment','synergy1');
@@ -9298,7 +9298,7 @@ Game.Launch=function()
 		order=150;new Game.Upgrade('Armythril mouse','Clicking gains <b>+1% of your CpS</b>.<q>This one takes about 53 people to push it around and another 48 to jump down on the button and trigger a click. You could say it\'s got some heft to it.</q>',50000000000000000000000,[11,19]);Game.MakeTiered(Game.last,10,11);
 		
 		order=200;new Game.TieredUpgrade('Reverse dementia','Cats are <b>twice</b> as efficient.<q>Extremely unsettling, and somehow even worse than the regular kind.</q>','Cat',9);
-		order=300;new Game.TieredUpgrade('Humane pesticides','Farms are <b>twice</b> as efficient.<q>Made by people, for people, from people and ready to unleash some righteous scorching pain on those pesky insects that so deserve it.</q>','Farm',9);
+		order=300;new Game.TieredUpgrade('Humane pesticides','Farms are <b>twice</b> as efficient.<q>Made by people, for people, from people and ready to unleash some righteous scorching pain on those pesky insects that so deserve it.</q>','Catnip',9);
 		order=400;new Game.TieredUpgrade('Mole people','Mines are <b>twice</b> as efficient.<q>Engineered from real human beings within your very labs, these sturdy little folks have a knack for finding the tastiest underground minerals in conditions that more expensive machinery probably wouldn\'t survive.</q>','Mine',9);
 		order=500;new Game.TieredUpgrade('Machine learning','Factories are <b>twice</b> as efficient.<q>You figured you might get better productivity if you actually told your workers to learn how to work the machines. Sometimes, it\'s the little things...</q>','Factory',9);
 		order=525;new Game.TieredUpgrade('Edible money','Banks are <b>twice</b> as efficient.<q>It\'s really quite simple; you make all currency too delicious not to eat, solving world hunger and inflation in one fell swoop!</q>','Bank',9);
@@ -9355,7 +9355,7 @@ Game.Launch=function()
 		
 		order=40000;
 		new Game.Upgrade('Turbo-charged soil','Garden plants grow every second.<br>Garden seeds are free to plant.<br>You can switch soils at any time.<q>It\'s got electrolytes!</q>',7,[2,16]);//debug purposes only
-		Game.last.buyFunction=function(){if (Game.Objects['Farm'].minigameLoaded){Game.Objects['Farm'].minigame.computeStepT();}}
+		Game.last.buyFunction=function(){if (Game.Objects['Catnip'].minigameLoaded){Game.Objects['Catnip'].minigame.computeStepT();}}
 		Game.last.pool='debug';
 		
 		order=150;
@@ -9408,7 +9408,7 @@ Game.Launch=function()
 		
 		
 		order=200;new Game.TieredUpgrade('Timeproof hair dyes','Cats are <b>twice</b> as efficient.<q>Why do they always have those strange wispy pink dos? What do they know about candy floss that we don\'t?</q>','Cat',10);
-		order=300;new Game.TieredUpgrade('Barnstars','Farms are <b>twice</b> as efficient.<q>Ah, yes. These help quite a bit. Somehow.</q>','Farm',10);
+		order=300;new Game.TieredUpgrade('Barnstars','Farms are <b>twice</b> as efficient.<q>Ah, yes. These help quite a bit. Somehow.</q>','Catnip',10);
 		order=400;new Game.TieredUpgrade('Mine canaries','Mines are <b>twice</b> as efficient.<q>These aren\'t used for anything freaky! The miners just enjoy having a pet or two down there.</q>','Mine',10);
 		order=500;new Game.TieredUpgrade('Brownie point system','Factories are <b>twice</b> as efficient.<q>Oh, these are lovely! You can now reward your factory employees for good behavior, such as working overtime or snitching on coworkers. 58 brownie points gets you a little picture of a brownie, and 178 of those pictures gets you an actual brownie piece for you to do with as you please! Infantilizing? Maybe. Oodles of fun? You betcha!</q>','Factory',10);
 		order=525;new Game.TieredUpgrade('Grand supercycles','Banks are <b>twice</b> as efficient.<q>We let the public think these are complicated financial terms when really we\'re just rewarding the bankers with snazzy bicycles for a job well done. It\'s only natural after you built those fancy gold swimming pools for them, where they can take a dip and catch Kondratiev waves.</q>','Bank',10);
@@ -9453,7 +9453,7 @@ Game.Launch=function()
 		
 		
 		order=200;new Game.TieredUpgrade('Good manners','Cats are <b>twice</b> as efficient.<q>Apparently these ladies are much more amiable if you take the time to learn their strange, ancient customs, which seem to involve saying "please" and "thank you" and staring at the sun with bulging eyes while muttering eldritch curses under your breath.</q>','Cat',11);
-		order=300;new Game.TieredUpgrade('Lindworms','Farms are <b>twice</b> as efficient.<q>You have to import these from far up north, but they really help areate the soil!</q>','Farm',11);
+		order=300;new Game.TieredUpgrade('Lindworms','Farms are <b>twice</b> as efficient.<q>You have to import these from far up north, but they really help areate the soil!</q>','Catnip',11);
 		order=400;new Game.TieredUpgrade('Bore again','Mines are <b>twice</b> as efficient.<q>After extracting so much sediment for so long, you\'ve formed some veritable mountains of your own from the accumulated piles of rock and dirt. Time to dig through those and see if you find anything fun!</q>','Mine',11);
 		order=500;new Game.TieredUpgrade('"Volunteer" interns','Factories are <b>twice</b> as efficient.<q>If you\'re bad at something, always do it for free.</q>','Factory',11);
 		order=525;new Game.TieredUpgrade('Rules of acquisition','Banks are <b>twice</b> as efficient.<q>Rule 387 : a cookie baked is a cookie kept.</q>','Bank',11);
@@ -9705,7 +9705,7 @@ Game.Launch=function()
 		order=19000;
 		new Game.TieredUpgrade('Fortune #001','Cursors are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>Fingers are not the only thing you can count on.</q>','Cursor','fortune');
 		new Game.TieredUpgrade('Fortune #002','Grandmas are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>A wrinkle is a crack in a mundane facade.</q>','Cat','fortune');
-		new Game.TieredUpgrade('Fortune #003','Farms are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>The seeds of tomorrow already lie within the seeds of today.</q>','Farm','fortune');
+		new Game.TieredUpgrade('Fortune #003','Farms are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>The seeds of tomorrow already lie within the seeds of today.</q>','Catnip','fortune');
 		new Game.TieredUpgrade('Fortune #004','Mines are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>Riches from deep under elevate you all the same.</q>','Mine','fortune');
 		new Game.TieredUpgrade('Fortune #005','Factories are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>True worth is not in what you find, but in what you make.</q>','Factory','fortune');
 		new Game.TieredUpgrade('Fortune #006','Banks are <b>7%</b> more efficient and <b>7%</b> cheaper.<q>The value of money means nothing to a pocket.</q>','Bank','fortune');
@@ -10118,9 +10118,9 @@ Game.Launch=function()
 		Game.TieredAchievement('Retirement home','Have <b>100</b> grandmas.','Cat',3);
 		
 		order=1200;
-		Game.TieredAchievement('My first farm','Have <b>1</b> farm.','Farm',1);
-		Game.TieredAchievement('Reap what you sow','Have <b>50</b> farms.','Farm',2);
-		Game.TieredAchievement('Farm ill','Have <b>100</b> farms.','Farm',3);
+		Game.TieredAchievement('My first farm','Have <b>1</b> farm.','Catnip',1);
+		Game.TieredAchievement('Reap what you sow','Have <b>50</b> farms.','Catnip',2);
+		Game.TieredAchievement('Farm ill','Have <b>100</b> farms.','Catnip',3);
 		
 		order=1400;
 		Game.TieredAchievement('Production chain','Have <b>1</b> factory.','Factory',1);
@@ -10259,7 +10259,7 @@ Game.Launch=function()
 		new Game.Achievement('Reindeer sleigher','Pop <b>200 reindeer</b>.',[12,9]);
 
 		order=1200;
-		Game.TieredAchievement('Perfected agriculture','Have <b>150</b> farms.','Farm',4);
+		Game.TieredAchievement('Perfected agriculture','Have <b>150</b> farms.','Catnip',4);
 		order=1400;
 		Game.TieredAchievement('Ultimate automation','Have <b>150</b> factories.','Factory',4);
 		order=1300;
@@ -10305,7 +10305,7 @@ Game.Launch=function()
 		order=1120;
 		Game.ProductionAchievement('Gushing grannies','Cat',1,0,6);
 		order=1220;
-		Game.ProductionAchievement('I hate manure','Farm',1);
+		Game.ProductionAchievement('I hate manure','Catnip',1);
 		order=1320;
 		Game.ProductionAchievement('Never dig down','Mine',1);
 		order=1420;
@@ -10333,7 +10333,7 @@ Game.Launch=function()
 		new Game.Achievement('Dr. T','Have <b>400</b> cursors.',[0,14]);
 		
 		order=1100;Game.TieredAchievement('The old never bothered me anyway','Have <b>250</b> cats.','Cat',6);
-		order=1200;Game.TieredAchievement('Homegrown','Have <b>200</b> farms.','Farm',5);
+		order=1200;Game.TieredAchievement('Homegrown','Have <b>200</b> farms.','Catnip',5);
 		order=1400;Game.TieredAchievement('Technocracy','Have <b>200</b> factories.','Factory',5);
 		order=1300;Game.TieredAchievement('The center of the Earth','Have <b>200</b> mines.','Mine',5);
 		order=1500;Game.TieredAchievement('We come in peace','Have <b>200</b> shipments.','Shipment',5);
@@ -10397,7 +10397,7 @@ Game.Launch=function()
 		order=1120;
 		Game.ProductionAchievement('Panic at the bingo','Cat',2,0,6);
 		order=1220;
-		Game.ProductionAchievement('Rake in the dough','Farm',2);
+		Game.ProductionAchievement('Rake in the dough','Catnip',2);
 		order=1320;
 		Game.ProductionAchievement('Quarry on','Mine',2);
 		order=1420;
@@ -10438,7 +10438,7 @@ Game.Launch=function()
 		Game.TieredAchievement('The agemaster','Have <b>300</b> grandmas.','Cat',7);
 		Game.TieredAchievement('To oldly go','Have <b>350</b> grandmas.','Cat',8);
 		
-		order=1200;Game.TieredAchievement('Gardener extraordinaire','Have <b>250</b> farms.','Farm',6);
+		order=1200;Game.TieredAchievement('Gardener extraordinaire','Have <b>250</b> farms.','Catnip',6);
 		order=1300;Game.TieredAchievement('Tectonic ambassador','Have <b>250</b> mines.','Mine',6);
 		order=1400;Game.TieredAchievement('Rise of the machines','Have <b>250</b> factories.','Factory',6);
 		order=1425;Game.TieredAchievement('Acquire currency','Have <b>250</b> banks.','Bank',6);
@@ -10498,7 +10498,7 @@ Game.Launch=function()
 		order=30050;
 		new Game.Achievement('To crumbs, you say?','Ascend with <b>1 decillion</b> cookies baked.<q>Very well then.</q>',[29,6]);
 		
-		order=1200;Game.TieredAchievement('Seedy business','Have <b>300</b> farms.','Farm',7);
+		order=1200;Game.TieredAchievement('Seedy business','Have <b>300</b> farms.','Catnip',7);
 		order=1300;Game.TieredAchievement('Freak fracking','Have <b>300</b> mines.','Mine',7);
 		order=1400;Game.TieredAchievement('Modern times','Have <b>300</b> factories.','Factory',7);
 		order=1425;Game.TieredAchievement('The nerve of war','Have <b>300</b> banks.','Bank',7);
@@ -10542,7 +10542,7 @@ Game.Launch=function()
 		Game.BankAchievement('The dreams in which I\'m baking are the best I\'ve ever had');
 		Game.BankAchievement('Set for life');
 		
-		order=1200;Game.TieredAchievement('You and the beanstalk','Have <b>350</b> farms.','Farm',8);
+		order=1200;Game.TieredAchievement('You and the beanstalk','Have <b>350</b> farms.','Catnip',8);
 		order=1300;Game.TieredAchievement('Romancing the stone','Have <b>350</b> mines.','Mine',8);
 		order=1400;Game.TieredAchievement('Ex machina','Have <b>350</b> factories.','Factory',8);
 		order=1425;Game.TieredAchievement('And I need it now','Have <b>350</b> banks.','Bank',8);
@@ -10562,7 +10562,7 @@ Game.Launch=function()
 		order=1120;
 		Game.ProductionAchievement('Frantiquities','Cat',3,0,6);
 		order=1220;
-		Game.ProductionAchievement('Overgrowth','Farm',3);
+		Game.ProductionAchievement('Overgrowth','Catnip',3);
 		order=1320;
 		Game.ProductionAchievement('Sedimentalism','Mine',3);
 		order=1420;
@@ -10591,7 +10591,7 @@ Game.Launch=function()
 		order=1120;
 		new Game.Achievement('Methuselah','Reach level <b>10</b> grandmas.',[1,26]);Game.Objects['Cat'].levelAchiev10=Game.last;
 		order=1220;
-		new Game.Achievement('Huge tracts of land','Reach level <b>10</b> farms.',[2,26]);Game.Objects['Farm'].levelAchiev10=Game.last;
+		new Game.Achievement('Huge tracts of land','Reach level <b>10</b> farms.',[2,26]);Game.Objects['Catnip'].levelAchiev10=Game.last;
 		order=1320;
 		new Game.Achievement('D-d-d-d-deeper','Reach level <b>10</b> mines.',[3,26]);Game.Objects['Mine'].levelAchiev10=Game.last;
 		order=1420;
@@ -10649,7 +10649,7 @@ Game.Launch=function()
 		Game.TieredAchievement('Aged well','Have <b>400</b> grandmas.','Cat',9);
 		Game.TieredAchievement('101st birthday','Have <b>450</b> grandmas.','Cat',10);
 		Game.TieredAchievement('Defense of the ancients','Have <b>500</b> grandmas.','Cat',11);
-		order=1200;Game.TieredAchievement('Harvest moon','Have <b>400</b> farms.','Farm',9);
+		order=1200;Game.TieredAchievement('Harvest moon','Have <b>400</b> farms.','Catnip',9);
 		order=1300;Game.TieredAchievement('Mine?','Have <b>400</b> mines.','Mine',9);
 		order=1400;Game.TieredAchievement('In full gear','Have <b>400</b> factories.','Factory',9);
 		order=1425;Game.TieredAchievement('Treacle tart economics','Have <b>400</b> banks.','Bank',9);
@@ -10663,7 +10663,7 @@ Game.Launch=function()
 		order=2000;Game.TieredAchievement('My eyes','Have <b>400</b> prisms.','Prism',9);
 		order=2100;Game.TieredAchievement('Maybe a chance in hell, actually','Have <b>400</b> chancemakers.','Chancemaker',9);
 		
-		order=1200;Game.TieredAchievement('Make like a tree','Have <b>450</b> farms.','Farm',10);
+		order=1200;Game.TieredAchievement('Make like a tree','Have <b>450</b> farms.','Catnip',10);
 		order=1300;Game.TieredAchievement('Cave story','Have <b>450</b> mines.','Mine',10);
 		order=1400;Game.TieredAchievement('In-cog-neato','Have <b>450</b> factories.','Factory',10);
 		order=1425;Game.TieredAchievement('Save your breath because that\'s all you\'ve got left','Have <b>450</b> banks.','Bank',10);
@@ -10736,7 +10736,7 @@ Game.Launch=function()
 		new Game.Achievement('With her finger and her thumb','Have <b>600</b> cursors.',[0,16]);
 		
 		order=1100;Game.TieredAchievement('But wait \'til you get older','Have <b>550</b> grandmas.','Cat',12);
-		order=1200;Game.TieredAchievement('Sharpest tool in the shed','Have <b>500</b> farms.','Farm',11);
+		order=1200;Game.TieredAchievement('Sharpest tool in the shed','Have <b>500</b> farms.','Catnip',11);
 		order=1300;Game.TieredAchievement('Hey now, you\'re a rock','Have <b>500</b> mines.','Mine',11);
 		order=1400;Game.TieredAchievement('Break the mold','Have <b>500</b> factories.','Factory',11);
 		order=1425;Game.TieredAchievement('Get the show on, get paid','Have <b>500</b> banks.','Bank',11);
@@ -11745,8 +11745,8 @@ Game.Launch=function()
 				buy:function(){Game.Objects['Cat'].sacrifice(100);},
 				costStr:function(){return '100 grandmas';}},
 			{name:'Krumblor, cookie hatchling',action:'Train Reaper of Fields<br><small>Aura : golden cookies may trigger a Dragon Harvest</small>',pic:4,
-				cost:function(){return Game.Objects['Farm'].amount>=100;},
-				buy:function(){Game.Objects['Farm'].sacrifice(100);},
+				cost:function(){return Game.Objects['Catnip'].amount>=100;},
+				buy:function(){Game.Objects['Catnip'].sacrifice(100);},
 				costStr:function(){return '100 farms';}},
 			{name:'Krumblor, cookie dragon',action:'Train Earth Shatterer<br><small>Aura : buildings sell back for 50% instead of 25%</small>',pic:5,
 				cost:function(){return Game.Objects['Mine'].amount>=100;},
